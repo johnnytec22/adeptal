@@ -1,0 +1,342 @@
+.title-line {
+    margin-top: 0px !important;
+    margin-bottom: 80px !important;
+    width: 100px;
+    border : 1px solid #75A6F0;
+    border-radius: 50% !important;
+    color: #75A6F0 !important; 
+}
+
+/**active page**/
+.active {
+    border-color: dodgerblue !important;
+    border-radius: 2px;
+}
+
+
+.btn-primary {
+    color: white;
+    background: dodgerblue;
+    padding: 10px 20px !important;
+    font-size: 18px;
+    border-radius: 2px !important;
+    border: 1px solid transparent !important;
+}
+.btn-primary:hover {
+    color: dodgerblue !important;
+    background: transparent !important;
+    border: 1px solid dodgerblue !important;
+}
+
+nav {
+    border: 0px !important;
+    transition: all 0.5s ease-in-out;
+}
+nav .navbar-brand h3, nav .navbar-brand i {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+nav .navbar-brand {
+    height: 100% !important;
+    width: 180px;
+}
+nav .navbar-brand a, footer p a{
+    text-decoration: none !important;
+}
+nav .navbar-nav {
+    margin-top: 5px !important;
+
+}
+nav .navbar-nav a{
+    text-decoration: none !important;
+    padding: 8px 15px !important;
+    top: 5px !important;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav .navbar-nav a:not(last-child):hover {
+    border-color: dodgerblue !important;
+    border-radius: 2px;
+}
+
+#contact-btn {
+    margin-left: 10px !important;
+    color: white !important;
+    background: dodgerblue !important;
+    border-radius: 2px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+@media(max-width: 768px){
+    #contact-btn {
+        top: 0px !important;
+        margin-left: 0px !important;
+        width: 150px;
+        float: right;
+        margin-right: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+
+
+#showcase {
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100%;
+    position: relative;
+}
+
+header .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 55px;
+    z-index: 0;
+}
+
+.owl-theme .owl-dots {
+    position: relative;
+    top: -100px;
+}
+
+#showcase .owl-item {
+    width: 100%;
+}
+
+#showcase .owl-item img {
+    max-height: 660px;
+}
+
+#showcase .owl-item h3 {
+    position: relative;
+    top: -200px;
+    color: white;
+}
+
+
+@media(max-width: 400px) {
+    #showcase {
+        overflow-x: hidden;
+    }
+
+    #showcase .owl-item {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    #showcase .owl-item img {
+        height: 250px;
+        width: 400px;
+        overflow-x: hidden !important;
+    }
+
+    #showcase .owl-item h3 {
+        position: relative;
+        top: -100px;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+/*main content*/
+/*services */
+#services {
+    padding-top: 50px;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 150px;
+}
+
+#services .thumbnail {
+    padding: 0px !important;
+}
+
+#services .thumbnail img {
+    width: 100%;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+#services .thumbnail .caption span {
+    font-size: 15px;
+}
+
+#services h3 {
+    color: black !important;
+    margin-top: 30px;
+}
+
+
+#services i {
+    color: #09C924;
+}
+
+
+#services .thumbnail .poster {
+    cursor: pointer;
+    position: relative !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#services .thumbnail .poster .overlay-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    padding: 4%;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    transition: 0.5s ease-in-out;
+}
+
+#services .thumbnail .poster .overlay-info p {
+    margin-top: 30%;
+    color: white;
+}
+
+#services .thumbnail:hover .overlay-info {
+    opacity: 1;
+}
+
+@media(max-width: 768px) and (min-width: 390px){
+    #services .thumbnail {
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+/**industries section**/
+#industries {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: #E5F1FE;
+}
+
+
+
+.circle-bordered {
+    display: inline-block;
+    font-size: 22px !important;
+    line-height: 80px;
+    width: 85px;
+    border: 2px solid dodgerblue;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.industry-icons {
+    color: #2C61EA;
+}
+
+
+/**products we server**/
+#products {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: white;
+}
+
+#products .product-column {
+    transition: all 0.5s ease-in;
+}
+#products .jumbotron {
+    background: white !important;
+    color: black;
+    border: 1px solid #E4DEDE;
+    padding-top: 30% !important;
+    padding-bottom: 30% !important;
+    border-radius: 0 !important;
+}
+#products .jumbotron:hover {
+    border-color: dodgerblue;
+}
+
+#products .jumbotron .product-icons {
+    color: #FD2EAC;
+    font-size: 30px
+}
+
+
+#products .jumbotron p {
+    margin: auto 0;
+}
+
+/**why adeptal **/
+#why_adeptal {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url('../images/index-img/adeptal.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+#why_adeptal .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#why_adeptal .content {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+/**working at adeptal**/
+#working_at_adeptal {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: #CD1466;
+    color: white;
+}
+
+#working_at_adeptal hr {
+    color: white !important;
+    border-color: white !important;
+}
+
+#working_at_adeptal h4 {
+    line-height: 1.8 !important;
+    margin-bottom: 20px;
+    font-size: 16px !important;
+}
+
+#working_at_adeptal .btn-primary {
+    background: white !important;
+    color: #FD2EAC !important;
+}
+
+#working_at_adeptal .btn-primary:hover {
+    background: transparent !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+/**footer**/
+footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
