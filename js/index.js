@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('.owl-carousel').owlCarousel({
+    $('#showcase').owlCarousel({
         loop: true,
         margin: 0,
         autoplay: true,
@@ -15,6 +15,34 @@ $(document).ready(function() {
         animateOut: 'fadeOut',
         animateIn: 'fadeIn'
     });
+
+    var test = $(".testimony-carousel");
+    test.owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        responsiveClass: true,
+        items: 1,
+        navText: [
+            "<i class='fa fa-angle-left fa-fw' style='color: #2C61EA; font-size: 20px'></i>",
+            "<i class='fa fa-angle-right fa-fw' style='color: #2C61EA; font-size: 20px'></i>"
+        ],
+        center: true,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn'
+    });
+
+    $(".testimony-carousel .item").on('mouseenter', function() {
+        test.trigger('stop.owl.autoplay')
+    });
+    $(".testimony-carousel .item").on('mouseleave', function() {
+        test.trigger('play.owl.autoplay')
+    });
+
+
+    
 
     $(window).bind('resize load', function() {
         if($(window).width() < 768) {

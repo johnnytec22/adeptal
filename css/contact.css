@@ -1,0 +1,189 @@
+ 
+.title-line {
+    margin-top: 0px !important;
+    margin-bottom: 40px !important;
+    width: 100px;
+    border : 1px solid #75A6F0;
+    border-radius: 50% !important;
+    color: #75A6F0 !important; 
+}
+
+/**active page**/
+.active {
+    border-color: dodgerblue !important;
+    border-radius: 2px;
+}
+
+
+.btn-primary {
+    color: white;
+    background: dodgerblue;
+    padding: 10px 20px !important;
+    font-size: 18px;
+    border-radius: 2px !important;
+    border: 1px solid transparent !important;
+}
+.btn-primary:hover {
+    color: dodgerblue !important;
+    background: transparent !important;
+    border: 1px solid dodgerblue !important;
+}
+
+nav {
+    border: 0px !important;
+    transition: all 0.5s ease-in-out;
+}
+nav .navbar-brand h3, nav .navbar-brand i {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+nav .navbar-brand {
+    height: 100% !important;
+    width: 180px;
+}
+nav .navbar-brand a, footer p a{
+    text-decoration: none !important;
+}
+nav .navbar-nav {
+    margin-top: 5px !important;
+
+}
+nav .navbar-nav a{
+    text-decoration: none !important;
+    padding: 8px 15px !important;
+    top: 5px !important;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav .navbar-nav a:not(last-child):hover {
+    border-color: dodgerblue !important;
+    border-radius: 2px;
+}
+
+#contact-btn {
+    margin-left: 10px !important;
+    color: white !important;
+    background: dodgerblue !important;
+    border-radius: 2px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+@media(max-width: 768px){
+    #contact-btn {
+        top: 0px !important;
+        margin-left: 0px !important;
+        width: 150px;
+        float: right;
+        margin-right: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+/**header**/
+header {
+    background-image: url('../images/solution-img/hero.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+header .container #header-info {
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: calc(50% - 25px);
+    bottom: calc(50% - 25px);
+    right: calc(50% - 250px);
+    left: calc(50% - 250px);
+}
+
+header .container #header-info p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+header .overlay, #contact_info .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+@media(max-width: 500px) {
+    header {
+        height: 280px;
+    }
+}
+
+i.page-icon {
+    color: dodgerblue;
+    position: absolute;
+    top: calc(100% - 31px);
+    left: 10%;
+
+}
+
+
+/**contact form**/
+#contact_form {
+    padding: 200px 3%;
+}
+
+#contact_form #quote_form h4{
+    margin-bottom: 20px;
+}
+
+#contact_form .input-group {
+    margin-bottom: 15px !important;
+}
+
+#contact_form .jumbotron {
+    background : dodgerblue !important;
+    color: white;
+    border-radius: 3px !important;
+
+}
+
+#contact_form .jumbotron .small {
+    color: lightgoldenrodyellow !important;
+}
+
+#contact_info {
+    position: relative;
+    color: white;
+    padding: 200px 0;
+    background-image: url('../images/contact-img/Contact.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#contact_info h3 {
+    margin-bottom: 100px;
+}
+
+#contact_info .contact_line {
+    margin-top: 0px !important;
+    margin-bottom: 40px !important;
+    width: 100px;
+    border : 1px solid white !important;
+    border-radius: 50% !important;
+    color: white !important;
+}
+
+
+
+footer {
+    margin-top: 50px;
+}

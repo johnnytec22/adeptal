@@ -87,6 +87,7 @@ header {
     background-image: url('../images/solution-img/hero.jpeg');
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     height: 400px;
     position: relative;
@@ -96,8 +97,8 @@ header .container #header-info {
     color: white;
     z-index: 1;
     position: absolute;
-    top: auto;
-    bottom: 80px;
+    top: calc(50% - 25px);
+    bottom: calc(50% - 25px);
     right: calc(50% - 150px);
     left: calc(50% - 150px);
 }
@@ -122,6 +123,15 @@ header .overlay, #safety .overlay {
         height: 280px;
     }
 }
+
+i.page-icon {
+    color: dodgerblue;
+    position: absolute;
+    top: calc(100% - 44px);
+    left: 10%;
+
+}
+
 /**sustainability at Adeptal**/
 #sustain_at_adeptal {
     padding: 200px 0;
@@ -135,7 +145,7 @@ section#sustain_at_adeptal p {
 /**supply Chain**/
 #supply_chain {
     padding: 200px 0;
-    background: #F7F1F1;
+    background: #E4DEDE;
 }
 
 section#supply_chain p {

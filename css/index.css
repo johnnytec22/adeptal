@@ -84,7 +84,9 @@ nav .navbar-nav a:not(last-child):hover {
 
 
 
-#showcase {
+
+
+header {
     padding: 0px !important;
     margin: 0px !important;
     width: 100%;
@@ -97,13 +99,15 @@ header .overlay {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 55px;
+    bottom: 0;
     z-index: 0;
 }
 
-.owl-theme .owl-dots {
-    position: relative;
-    top: -100px;
+header .owl-theme .owl-dots {
+    position: absolute;
+    top: 80% !important;
+    left: calc(50% - 50px);
+    right: calc(50% - 50px);
 }
 
 #showcase .owl-item {
@@ -114,20 +118,33 @@ header .overlay {
     max-height: 660px;
 }
 
-#showcase .owl-item h3 {
-    position: relative;
-    top: -200px;
+header .owl-item h3 {
+    position: absolute;
+    top: 55%;
+    left: calc(50% - 100px);
+    right: calc(50% - 100px);
     color: white;
 }
 
+i.page-icon {
+    color: dodgerblue;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    z-index: 3;
+}
 
-@media(max-width: 400px) {
+
+@media(max-width: 450px) {
     #showcase {
         overflow-x: hidden;
     }
 
     #showcase .owl-item {
-        overflow-x: hidden;
+        width: 100%;
+    }
+    header .overlay {
+        height: 250px;
         width: 100%;
     }
 
@@ -137,11 +154,14 @@ header .overlay {
         overflow-x: hidden !important;
     }
 
-    #showcase .owl-item h3 {
-        position: relative;
-        top: -100px;
+    header .owl-item h3 {
         font-size: 20px;
         color: white;
+    }
+
+    i.page-icon {
+        top: 84%;
+        left: 5%;
     }
 }
 
@@ -269,7 +289,7 @@ header .overlay {
 }
 
 #products .jumbotron .product-icons {
-    color: #FD2EAC;
+    color: #fb3958;
     font-size: 30px
 }
 
@@ -305,12 +325,21 @@ header .overlay {
     padding-top: 30px;
 }
 
+/**testimonies**/
+#testimony {
+    padding: 100px 0;
+}
+
+#testimony i {
+    color: dodgerblue;
+}
+
 /**working at adeptal**/
 #working_at_adeptal {
     padding-top: 150px;
     padding-bottom: 150px;
-    background: #CD1466;
-    color: white;
+    background: #E4DEDE;
+    color: black;
 }
 
 #working_at_adeptal hr {
@@ -324,10 +353,6 @@ header .overlay {
     font-size: 16px !important;
 }
 
-#working_at_adeptal .btn-primary {
-    background: white !important;
-    color: #FD2EAC !important;
-}
 
 #working_at_adeptal .btn-primary:hover {
     background: transparent !important;
@@ -340,3 +365,4 @@ footer {
     padding-top: 30px;
     padding-bottom: 20px;
 }
+
