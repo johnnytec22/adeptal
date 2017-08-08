@@ -8,8 +8,10 @@
         <!--stylesheets-->
         <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/animate.css">
         <link rel="stylesheet" type="" href="../css/owl.carousel.css">
         <link rel="stylesheet" type="" href="../css/owl.theme.default.css">
+        <link rel="stylesheet" href="../css/general.css">
         <link href="../css/contact.css" rel="stylesheet">
         
         
@@ -65,49 +67,53 @@
 
             <section id="contact_form">
                 <div class="container text-center">
+
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-6 col-md-7 col-sm-8 col-xs-12">
                             <h3 class="text-center">Make An Enquiry</h3>
-                            <hr class="title-line">
+                            <hr class="title-line text-center">
                             <p class="text-center" style="margin-bottom: 60px;">Send us a Request and We will surely get back to in no time...</p>     
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="row jumbotron">
+                        <div id="opening_hours_outter" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-                                <h4 class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12" >Opening Hours <span class="open-blink"></span> </h4>
-                                
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <h3 class="text-center">
+                            <div id="opening_hours" class="row well">
+
+                                <h4 class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12" >Opening Hours <span class="open-blink animated infinite flash"></span> </h4>
+                                <hr class="title-line text-center" style="color: white !important; border-color: white !important;">
+
+                                <div style="margin-bottom: 40px;" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h4 class="text-center">
                                         <i class="fa fa-calendar fa-fw"></i>
-                                        <span class="small">Mon - Fri</span>
-                                    </h3>
-                                    <h4 class="text-center">9 : 00 am - 5 : 00 pm <span class="small" >GMT +1</span></h4>
+                                        <span >MON - FRI</span>
+                                    </h4>
+                                    <h5 class="text-center">9 : 00 am - 5 : 00 pm <span style="line-height: 0.1; color:#4F84E7;" >GMT+1</span></h5>
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <h3 class="text-center">
+                                    <h4 class="text-center">
                                         <i class="fa fa-calendar-o fa-fw"></i>
-                                        <span class="small">Sat - Sun</span>
-                                    </h3>
-                                    <h4 class="text-center">11 : 00 am - 4 : 00 pm <span class="small" >GMT +1</span></h4>
+                                        <span >SAT - SUN</span>
+                                    </h4>
+                                    <h5 class="text-center">11 : 00 am - 4 : 00 pm <span style="line-height: 0.1; color:#4F84E7;" >GMT+1</span></h5>
                                 </div>
 
                             </div>
+
                         </div>
 
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="quote_form">
                             <form action="mailto: johngorithm@gmail.com" method="POST" >
                                 <div class="row">
 
-                                    <h4 class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12" >Get A Quote<span class="open-blink"></span> </h4>
+                                    <h4 class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12" >Get A Quote</h4>
 
                                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                                            <input class="form-control" type="text" name="name" value="" placeholder="Name">
+                                            <input class="form-control" type="text" name="name" value="" placeholder="Name" required>
                                         </div>
                                     </div>
                     
@@ -115,7 +121,7 @@
                                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-phone-square fa-fw"></i></span>
-                                            <input class="form-control" type="text" name="phone" value="" placeholder="Phone">
+                                            <input class="form-control" type="text" name="phone" value="" placeholder="Phone" required>
                                         </div>
                                     </div>
                                     
@@ -123,7 +129,7 @@
                                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
-                                            <input class="form-control" type="text" name="email" value="" placeholder="Email">
+                                            <input class="form-control" type="email" name="email" value="" placeholder="Email" required>
                                         </div>
                                     </div>
                                     
@@ -131,7 +137,7 @@
                                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                                         <div class="input-group">
                                             <span class="input-group-addon">I would like to: </span>
-                                            <select class="form-control text-center" type="text" name="request" value="">
+                                            <select class="form-control text-center" type="text" name="request"  required>
                                                 <option value="" disabled>--select--</option>
                                                 <option value="get a service">get a service</option>
                                                 <option value="get an advice">get an advice</option>
@@ -154,64 +160,46 @@
                 </div>
             </section><!--end of services-->
 
+            <!--start of contacts display-->
+
             <section id="contact_info">
                 <div class="overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        
-                        <h3 class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12" >Contact Us</h3>
-                        <hr class="contact_line">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <h4 class="text-center"><i class="fa fa-phone-square fa-fw" style="color: green"></i><span>08112449820</span></h4>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <h4 class="text-center"><i class="fa fa-envelope fa-fw" style="color: #F51FED;"></i><span>john@jovins.com</span></h4>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <h4 class="text-center"><i class="fa fa-phone fa-fw" style="color: #26C939"></i><span>09030756260</span></h4>
-                        </div>
+                <div class="container text-center">
+                    <h2 class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 50px;">Contact Us</h2>
+                    <div class="row" >
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+                            <div id="phones">
+                                <h3 style="margin-bottom: 40px;" >Office Lines</h3>
+                                <h5><i class="fa fa-phone-square fa-fw" style="color: green"></i><span>+2348112449820</span></h5>
+                                <h5><i class="fa fa-phone fa-fw" style="color: #26C939"></i><span>+2349030756260</span></h5>
+                            </div>
+
+                            <div id="emails">
+                                <h3 style="margin-bottom: 30px; margin-top: 50px;">Office Emails</h3>
+                                <h5><i class="fa fa-envelope fa-fw" style="color: cyan;"></i><span>john@adeptal.com</span></h5>
+                                <h5><i class="fa fa-envelope fa-fw" style="color: #fb3895;"></i><span>shade@adeptal.com</span></h5>
+                            </div>
+                           
                         </div>
 
-                        <div class="row" style="margin: 40px 0 20px 0 !important;">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <h4 class="text-center"><i class="fa fa-map-marker fa-fw" style="color: red"></i><span>5 Main Street, Ikeja</span></h4>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <h4 class="text-center"><i class="fa fa-globe fa-fw" style="color: #4F84E7"></i><span>Lagos, Nigeria</span></h4>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="office">
+                                <h3 style="margin-bottom: 40px;" >Lagos Office</h3>
+                                <h5><i class="fa fa-map-marker fa-fw" style="color: red"></i><span>5 Main Street, Ikeja</span></h5>
+                                <h5><i class="fa fa-globe fa-fw" style="color: #4F84E7"></i><span>Lagos, Nigeria</span></h5>
+                            </div>
+
+                            <div class="office">
+                                <h3 style="margin-bottom: 30px; margin-top: 50px;">Abuja Office</h3>
+                                <h5><i class="fa fa-map-marker fa-fw" style="color: red"></i><span>5 Main Street, Gawa</span></h5>
+                                <h5><i class="fa fa-globe fa-fw" style="color: #4F84E7"></i><span>Abuja, Nigeria</span></h5>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-            </section><!--end of industries-we-serve-->
-
-            <!--start of things-we-serve-->
-            <section id="products">
-                <div class="container">
-                    <div class="row">
-                        
-                        
-
-                    </div>
-                </div>
-            </section>
-
-            <section id="why_adeptal">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        
-
-                    </div>
-                </div>
-            </section><!--end of why adeptal-->
-
-            <section id="working_at_adeptal">
-                <div class="container">
-                    <div class="row">
-                        
-                    </div>
-                </div>
-            </section><!--end of working adeptal-->
+            </section><!--Contact us ending-->
 
         </main><!--end of main content-->
 
@@ -239,6 +227,7 @@
         <script src="../js/jquery.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/owl.carousel.js"></script>
+        <script src="../js/general.js"></script>
         <script src="../js/contact.js"></script>
     </body>
 </html>

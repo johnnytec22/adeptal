@@ -1,91 +1,7 @@
-.title-line {
-    margin-top: 0px !important;
-    margin-bottom: 80px !important;
-    width: 100px;
-    border : 1px solid #75A6F0;
-    border-radius: 50% !important;
-    color: #75A6F0 !important; 
-}
 
-/**active page**/
-.active {
-    border-color: dodgerblue !important;
-    border-radius: 2px;
-}
+/**nav stylings are in the general.css**/
 
-
-.btn-primary {
-    color: white;
-    background: dodgerblue;
-    padding: 10px 20px !important;
-    font-size: 18px;
-    border-radius: 2px !important;
-    border: 1px solid transparent !important;
-}
-.btn-primary:hover {
-    color: dodgerblue !important;
-    background: transparent !important;
-    border: 1px solid dodgerblue !important;
-}
-
-nav {
-    border: 0px !important;
-    transition: all 0.5s ease-in-out;
-}
-nav .navbar-brand h3, nav .navbar-brand i {
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-nav .navbar-brand {
-    height: 100% !important;
-    width: 180px;
-}
-nav .navbar-brand a, footer p a{
-    text-decoration: none !important;
-}
-nav .navbar-nav {
-    margin-top: 5px !important;
-
-}
-nav .navbar-nav a{
-    text-decoration: none !important;
-    padding: 8px 15px !important;
-    top: 5px !important;
-    border: 1px solid transparent;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-nav .navbar-nav a:not(last-child):hover {
-    border-color: dodgerblue !important;
-    border-radius: 2px;
-}
-
-#contact-btn {
-    margin-left: 10px !important;
-    color: white !important;
-    background: dodgerblue !important;
-    border-radius: 2px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15);
-}
-
-@media(max-width: 768px){
-    #contact-btn {
-        top: 0px !important;
-        margin-left: 0px !important;
-        width: 150px;
-        float: right;
-        margin-right: 20px;
-        margin-top: 20px;
-        text-align: center;
-    }
-}
-
-
-
-
-
+/**header stylings**/
 header {
     padding: 0px !important;
     margin: 0px !important;
@@ -115,27 +31,37 @@ header .owl-theme .owl-dots {
 }
 
 #showcase .owl-item img {
-    max-height: 660px;
+    max-height: 600px;
 }
 
-header .owl-item h3 {
+header .owl-item div.welcome_info {
     position: absolute;
-    top: 55%;
-    left: calc(50% - 100px);
-    right: calc(50% - 100px);
+    top: 45%;
+    left: calc(50% - 180px);
+    right: calc(50% - 180px);
     color: white;
 }
+header .owl-item div.welcome_info p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+
 
 i.page-icon {
     color: dodgerblue;
     position: absolute;
-    top: 75%;
+    top: 87%;
     left: 10%;
     z-index: 3;
 }
 
 
+
+
 @media(max-width: 450px) {
+       
     #showcase {
         overflow-x: hidden;
     }
@@ -144,16 +70,14 @@ i.page-icon {
         width: 100%;
     }
     header .overlay {
-        height: 250px;
+        height: 290px;
         width: 100%;
     }
-
     #showcase .owl-item img {
-        height: 250px;
-        width: 400px;
+        height: 290px;
+        width: 451px;
         overflow-x: hidden !important;
     }
-
     header .owl-item h3 {
         font-size: 20px;
         color: white;
@@ -162,6 +86,30 @@ i.page-icon {
     i.page-icon {
         top: 84%;
         left: 5%;
+    }
+}
+
+@media(max-width: 400px){
+    header .owl-item div.welcome_info {
+        top: 37%;
+        left: calc(50% - 126px);
+        right: calc(50% - 126px);
+    }
+
+    #showcase .owl-item img {
+        height: 250px;
+        width: 401px;
+        overflow-x: hidden !important;
+    }
+
+    header .overlay {
+        height: 250px;
+        width: 100%;
+    }
+
+    i.page-icon {
+        top: 85%;
+        left: 4%;
     }
 }
 
@@ -176,12 +124,14 @@ i.page-icon {
 
 #services .thumbnail {
     padding: 0px !important;
+    border-radius: 0px !important;
+    border: 0 !important;
 }
 
 #services .thumbnail img {
     width: 100%;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
 }
 #services .thumbnail .caption span {
     font-size: 15px;
@@ -197,6 +147,13 @@ i.page-icon {
     color: #09C924;
 }
 
+#services .thumbnail .caption {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
 
 #services .thumbnail .poster {
     cursor: pointer;
@@ -213,12 +170,27 @@ i.page-icon {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 0;
+    background: rgba(30,144,255, 0.4);
+    opacity: 1;
     padding: 4%;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-    transition: 0.5s ease-in-out;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+#services .thumbnail .poster .overlay-info .dark_product_overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, 0.6);
+    opacity: 1;
+    padding: 4%;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
 }
 
 #services .thumbnail .poster .overlay-info p {
@@ -273,30 +245,78 @@ i.page-icon {
     background: white;
 }
 
-#products .product-column {
-    transition: all 0.5s ease-in;
-}
+
 #products .jumbotron {
+    height: 240px;
+    position: relative;
     background: white !important;
     color: black;
     border: 1px solid #E4DEDE;
-    padding-top: 30% !important;
-    padding-bottom: 30% !important;
+    padding-top: 0% !important;
+    padding-bottom: 0% !important;
     border-radius: 0 !important;
 }
-#products .jumbotron:hover {
-    border-color: dodgerblue;
+#products .product-header-icons {
+    color: #FD2EAC;
+    font-size: 35px
+}
+#products .product-icons {
+    font-size: 25px;
 }
 
-#products .jumbotron .product-icons {
-    color: #fb3958;
-    font-size: 30px
+#products .jumbotron .product-info p {
+    color: rgba(0, 0, 0, 0.5);
+}
+#products .jumbotron .product-overlay  p{
+    font-size: 15px !important;
+    color: white !important;
+}
+#products .jumbotron .product-overlay  p#first-paragraph {
+    padding-top: 15%;
 }
 
-
-#products .jumbotron p {
-    margin: auto 0;
+#products .jumbotron .product-info{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    transition: top 0.3s ease-in-out;
+    -webkit-transition: top 0.3s ease-in-out;
+    -moz-transition: top 0.3s ease-in-out;
+    -o-transition: top 0.3s ease-in-out;
 }
+
+#products .jumbotron .product-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 35%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+}
+.product-info-moveup {
+    top: -8% !important;
+}
+
+@media(max-width: 768px) and (min-width: 390px){
+    #products .jumbotron {
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(max-width: 300px){
+    #products .jumbotron {
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 /**why adeptal **/
 #why_adeptal {
