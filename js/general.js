@@ -28,4 +28,19 @@ $(document).ready(function() {
     $(window).scroll( function () {
         determineNavBarBackground();
     });
+
+    //for hidding and showing page-icons
+    function determinePageIconVisibility() {
+        if ( $(window).width() < 768) {
+            $('header i.page-icon').hide();
+        }else{
+            $('header i.page-icon').show();
+        }
+    }
+    //on load call
+    determinePageIconVisibility();
+    //on resize call
+    $(window).on('resize', function() {
+        determinePageIconVisibility();
+    })
 })

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!--stylesheets-->
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
         <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/animate.css">
@@ -29,10 +30,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="navbar-brand">
-                        <i class="fa fa-flask fa-lg pull-left" style="font-size: 35px; margin-top: 20px; color: #FD2EAC"></i>
-                        <span>
-                            <a href="../index.html" ><h3>adep<span class="" style="color: white; background: dodgerblue; padding: 3px 10px; border-radius: 2px; font-family: Comfortaa;">TAL</span></h3></a>
-                        </span>
+                        <a href="../index.html"><h3 ><i class="fa fa-flask fa-lg pull-left" style=" color: #FD2EAC"></i>adep<span class="" style="color: white; background: dodgerblue; padding: 3px 10px; border-radius: 2px; font-family: Comfortaa;">TAL</span></h3></a>
                     </div>
                        
                 </div>
@@ -53,7 +51,7 @@
                 <div id="header-info" class="text-center" >
                     <h1 class="animated shake">Get In-touch</h1>
                     <br>
-                    <p class="animated bounceIn">You're always Welcome and with <i style="color: #FD2EAC;" class="fa fa-heart fa-2x"></i> for what we do, we will give you the Best.</p>
+                    <p class="animated bounceIn">You're always Welcome and with <i style="color: #FD2EAC;" class="fa fa-heart fa-lg"></i> for what we do, we will give you the Best.</p>
                 </div>
             </div>
             
@@ -69,46 +67,17 @@
                 <div class="container text-center">
 
                     <div class="row">
-                        <div class="col-lg-6 col-md-7 col-sm-8 col-xs-12">
-                            <h3 class="text-center">Make An Enquiry</h3>
-                            <hr class="title-line text-center">
-                            <p class="text-center" style="margin-bottom: 60px;">Send us a Request and We will surely get back to in no time...</p>     
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div id="opening_hours_outter" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
-                            <div id="opening_hours" class="row well">
-
-                                <h4 class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12" >Opening Hours <span class="open-blink animated infinite flash"></span> </h4>
-                                <hr class="title-line text-center" style="color: white !important; border-color: white !important;">
-
-                                <div style="margin-bottom: 40px;" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <h4 class="text-center">
-                                        <i class="fa fa-calendar fa-fw"></i>
-                                        <span >MON - FRI</span>
-                                    </h4>
-                                    <h5 class="text-center">9 : 00 am - 5 : 00 pm <span style="line-height: 0.1; color:#4F84E7;" >GMT+1</span></h5>
-                                </div>
-
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <h4 class="text-center">
-                                        <i class="fa fa-calendar-o fa-fw"></i>
-                                        <span >SAT - SUN</span>
-                                    </h4>
-                                    <h5 class="text-center">11 : 00 am - 4 : 00 pm <span style="line-height: 0.1; color:#4F84E7;" >GMT+1</span></h5>
-                                </div>
-
-                            </div>
-
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <h3>Make enquiry</h3>
+                            <hr class="title-line" >
+                            <h3 id="form_paragraph">Send us a request and we will surely get back to in no time...</h3>
                         </div>
 
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="quote_form">
-                            <form action="mailto: johngorithm@gmail.com" method="POST" >
+                        <!--contact or request form-->
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <form action="mailto: johngorithm@gmail.com">
                                 <div class="row">
-
-                                    <h4 class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12" >Get A Quote</h4>
 
                                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                                         <div class="input-group">
@@ -136,7 +105,7 @@
 
                                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                                         <div class="input-group">
-                                            <span class="input-group-addon">I would like to: </span>
+                                            <span class="input-group-addon">I'd like to: </span>
                                             <select class="form-control text-center" type="text" name="request"  required>
                                                 <option value="" disabled>--select--</option>
                                                 <option value="get a service">get a service</option>
@@ -155,45 +124,74 @@
 
                                 </div>
                             </form>
-                        </div>
-                    </div>
-                </div>
-            </section><!--end of services-->
+                        </div><!--end of contact form-->
+
+                    </div><!--end of contact form-->
+                </div><!--end of the container div-->
+            </section><!--end of contact form section-->
 
             <!--start of contacts display-->
 
             <section id="contact_info">
-                <div class="overlay"></div>
-                <div class="container text-center">
-                    <h2 class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 50px;">Contact Us</h2>
-                    <div class="row" >
 
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
-                            <div id="phones">
-                                <h3 style="margin-bottom: 40px;" >Office Lines</h3>
-                                <h5><i class="fa fa-phone-square fa-fw" style="color: green"></i><span>+2348112449820</span></h5>
-                                <h5><i class="fa fa-phone fa-fw" style="color: #26C939"></i><span>+2349030756260</span></h5>
-                            </div>
+                <!--opening hours-->
+                <div id="opening_hours" class="well">
+                    <div class="row">
+                        <h4 id="opening_hours_header" class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12" style=" font-size: 25px; margin-bottom: 15px; color: white;" >opening hours <span class="open-blink animated infinite flash"></span> </h4>
 
-                            <div id="emails">
-                                <h3 style="margin-bottom: 30px; margin-top: 50px;">Office Emails</h3>
-                                <h5><i class="fa fa-envelope fa-fw" style="color: cyan;"></i><span>john@adeptal.com</span></h5>
-                                <h5><i class="fa fa-envelope fa-fw" style="color: #fb3895;"></i><span>shade@adeptal.com</span></h5>
-                            </div>
-                           
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <h4>
+                                <i class="fa fa-calendar fa-fw"></i>
+                                <span >Mon - Fri</span>
+                            </h4>
+                            <h3>9 : 00 am - 5 : 00 pm <span style="font-size: 11px; color: #2C61EA;">GMT+1</span></h3>
                         </div>
 
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="office">
-                                <h3 style="margin-bottom: 40px;" >Lagos Office</h3>
-                                <h5><i class="fa fa-map-marker fa-fw" style="color: red"></i><span>5 Main Street, Ikeja</span></h5>
-                                <h5><i class="fa fa-globe fa-fw" style="color: #4F84E7"></i><span>Lagos, Nigeria</span></h5>
-                            </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <h4>
+                                <i class="fa fa-calendar-o fa-fw"></i>
+                                <span >Sat - Sun</span>
+                            </h4>
+                            <h3>11 : 00 am - 4 : 00 pm <span style="font-size: 11px; color: #2C61EA;">GMT+1</span></h3>
+                        </div>
+                    </div>
+                </div>
 
+                <!--background overlay-->
+                <div class="overlay"></div>
+
+                <!--contacts and addresses-->
+                <div class="container text-center" id="location">
+                    <div class="row" >
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" >
+                            <div id="phones">
+                                <h3 style="margin-bottom: 15px;" >Call lines</h3>
+                                <h5><i class="fa fa-phone-square fa-fw" style="color: #26C939"></i><span> +2348112449820</span></h5>
+                                <h5><i class="fa fa-phone fa-fw" style="color: #26C939"></i><span> +2349030756260</span></h5>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div id="emails">
+                                <h3 style="margin-bottom: 15px;">Office emails</h3>
+                                <h5><i class="fa fa-envelope fa-fw" style="color: #E4AC04;"></i><span> john@adeptal.com</span></h5>
+                                <h5><i class="fa fa-envelope fa-fw" style="color: #E4AC04;"></i><span> shade@adeptal.com</span></h5>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="office">
-                                <h3 style="margin-bottom: 30px; margin-top: 50px;">Abuja Office</h3>
-                                <h5><i class="fa fa-map-marker fa-fw" style="color: red"></i><span>5 Main Street, Gawa</span></h5>
-                                <h5><i class="fa fa-globe fa-fw" style="color: #4F84E7"></i><span>Abuja, Nigeria</span></h5>
+                                <h3 style="margin-bottom: 15px;" >Lagos office</h3>
+                                <h5><i class="fa fa-map-marker fa-fw" style="color: red"></i><span> 5 Main Street, Ikeja</span></h5>
+                                <h5><i class="fa fa-globe fa-fw" style="color: #4F84E7"></i><span> Lagos, Nigeria</span></h5>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="office">
+                                <h3 style="margin-bottom: 15px;">Abuja office</h3>
+                                <h5><i class="fa fa-map-marker fa-fw" style="color: red"></i><span> 5 Main Street, Gawa</span></h5>
+                                <h5><i class="fa fa-globe fa-fw" style="color: #4F84E7"></i><span> Abuja, Nigeria</span></h5>
                             </div>
                         </div>
 

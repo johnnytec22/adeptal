@@ -7,7 +7,7 @@ header {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    height: 400px;
+    height: 440px;
     position: relative;
 }
 
@@ -15,10 +15,23 @@ header .container #header-info {
     color: white;
     z-index: 1;
     position: absolute;
-    top: calc(50% - 25px);
-    bottom: calc(50% - 25px);
-    right: calc(50% - 250px);
-    left: calc(50% - 250px);
+    top: 45%;
+    bottom: 0;
+    right: 27%;
+    left: 27%;
+}
+
+@media(max-width: 800px) and (min-width: 501px){
+    header .container #header-info {
+        right: 16%;
+        left: 16%;
+    }
+    header .container #header-info h1 {
+        font-size: 30px;
+    }
+    header .container #header-info p {
+        font-size: 15px;
+    }
 }
 
 header .container #header-info p {
@@ -26,9 +39,9 @@ header .container #header-info p {
     line-height: 1.6;
 }
 
-header .overlay, #safety .overlay {
+header .overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.65);
     top: 0;
     left: 0;
     right: 0;
@@ -40,12 +53,36 @@ header .overlay, #safety .overlay {
     header {
         height: 280px;
     }
+    header .container #header-info {
+        right: 0;
+        left: 0;
+    }
+    header .container #header-info h1 {
+        font-size: 26px;
+    }
+    header .container #header-info p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+}
+
+@media(max-width: 400px) {
+    header .container #header-info h1 {
+        font-size: 23px;
+    }
+    header .container #header-info p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    header .container #header-info {
+        top: 40%;
+    }
 }
 
 i.page-icon {
     color: dodgerblue;
     position: absolute;
-    top: calc(100% - 31px);
-    left: 10%;
-
+    top: 92%;
+    left: 8%;
 }

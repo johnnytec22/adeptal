@@ -22,20 +22,4 @@
             
         }
     });
-
-
-    function determineOpeningHoursPosition () {
-        if ($(window).width() < 770) {
-            $('#contact_form #opening_hours_outter #opening_hours').removeClass('opening_hours');
-        }else{
-            $('#contact_form #opening_hours_outter #opening_hours').addClass('opening_hours');
-        }
-    }
-    determineOpeningHoursPosition();
-    $(window).bind('load resize', determineOpeningHoursPosition);
-    
-
-
-
-
 })

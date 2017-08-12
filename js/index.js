@@ -66,7 +66,7 @@ $(document).ready(function() {
 
 
     function whyAdeptalColumnTextAlignment() {
-        if($(window).width() < 769) {
+        if($(window).width() < 992) {
             $('.adeptal-column .content p').addClass('text-center');
         }else{
             $('.adeptal-column .content p').removeClass('text-center');
