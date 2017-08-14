@@ -1,5 +1,18 @@
 /**nav stylings are in the general.css**/
-
+.input-group-addon, .form-control {
+    border: 1px solid dodgerblue !important;
+}
+.input-group-addon {
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+    color: white;
+    border-color: dodgerblue !important;
+    background-color: dodgerblue !important;
+}
+.form-control {
+    border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+}
 /**header**/
 header {
     background-image: url('../images/solution-img/hero.jpeg');
