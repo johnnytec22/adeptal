@@ -5,7 +5,6 @@ header {
     background-image: url('../images/solution-img/hero.jpeg');
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     height: 440px;
     position: relative;

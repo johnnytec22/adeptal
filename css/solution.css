@@ -68,7 +68,7 @@ i.page-icon {
 }
 
 section#sustain_at_adeptal p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -91,7 +91,6 @@ section#supply_chain p {
 section#safety {
     padding: 150px 0;
     background-image: url('../images/index-img/adeptal.jpg');
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -127,18 +126,8 @@ section#sus_solution p {
     line-height: 1.6;
 }
 
-
-
-/**footer**/
-footer {
-    background: lightgrey;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    font-size: 15px;
-}
-
 @media(max-width: 768px) and (min-width: 390px) {
-    section > .container > .row > div.col-lg-6 > p{
+    section > .container > .row > div.col-lg-6 > p, .solution_paragraphs > p{
         width: 380px;
         margin-left: auto;
         margin-right: auto
@@ -148,16 +137,16 @@ footer {
 
 @media(max-width: 770px) {
     #sustain_at_adeptal {
-        padding: 50px 0;
+        padding: 80px 0;
     }
     #supply_chain {
-        padding: 50px 0;
+        padding: 80px 0;
     }
     section#safety {
-        padding: 50px 0;
+        padding: 80px 0;
     }
     section#sus_solution {
-        padding: 50px 0;
+        padding: 80px 0;
     }
 }
 
@@ -170,7 +159,7 @@ footer {
     section > .container > .row > .col-lg-12 > h3 {
         font-size: 22px;
     }
-    .solution_paragraphs {
+    .solution_paragraphs, .solution_paragraphs > p {
         font-size: 15px !important;
         line-height: 1.5 !important;
     }
@@ -183,7 +172,7 @@ footer {
     section > .container > .row > .col-lg-12 > h3 {
         font-size: 19px;
     }
-    .solution_paragraphs {
+    .solution_paragraphs, .solution_paragraphs > p {
         font-size: 14px !important;
         line-height: 1.4 !important;
     }

@@ -1,0 +1,182 @@
+
+
+/**header**/
+header {
+    background-image: url('../images/solution-img/hero.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 440px;
+    position: relative;
+}
+
+header .container #header-info {
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 45%;
+    bottom: 0;
+    right: 27%;
+    left: 27%;
+}
+
+@media(max-width: 800px) and (min-width: 501px){
+    header .container #header-info {
+        right: 16%;
+        left: 16%;
+    }
+    header .container #header-info h1 {
+        font-size: 30px;
+    }
+    header .container #header-info p {
+        font-size: 15px;
+    }
+}
+
+header .container #header-info p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+header .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.65);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+@media(max-width: 500px) {
+    header {
+        height: 280px;
+    }
+    header .container #header-info {
+        right: 0;
+        left: 0;
+    }
+    header .container #header-info h1 {
+        font-size: 26px;
+    }
+    header .container #header-info p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+}
+
+@media(max-width: 400px) {
+    header .container #header-info h1 {
+        font-size: 23px;
+    }
+    header .container #header-info p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    header .container #header-info {
+        top: 40%;
+    }
+}
+
+i.page-icon {
+    color: dodgerblue;
+    position: absolute;
+    top: 92%;
+    left: 8%;
+}
+
+/**products we server**/
+#products {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: white;
+}
+
+
+#products .jumbotron {
+    height: 240px;
+    position: relative;
+    background: white !important;
+    border: 1px solid dodgerblue;
+    padding-top: 0% !important;
+    padding-bottom: 0% !important;
+    border-radius: 3px !important;
+}
+#products .product-header-icons {
+    color: #FD2EAC;
+    font-size: 35px
+}
+#products .product-icons {
+    font-size: 25px;
+}
+
+#products .jumbotron .product-info p {
+    color: rgba(0, 0, 0, 0.5);
+}
+#products .jumbotron .product-overlay  p{
+    font-size: 15px !important;
+    color: white !important;
+}
+#products .jumbotron .product-overlay  p#first-paragraph {
+    padding-top: 15%;
+}
+
+#products .jumbotron .product-info{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    transition: top 0.3s ease-in-out;
+    -webkit-transition: top 0.3s ease-in-out;
+    -moz-transition: top 0.3s ease-in-out;
+    -o-transition: top 0.3s ease-in-out;
+}
+
+#products .jumbotron .product-overlay {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+}
+.product-info-moveup {
+    top: -8% !important;
+}
+
+@media(max-width: 768px) and (min-width: 390px){
+    #products .jumbotron {
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(max-width: 300px){
+    #products .jumbotron {
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 770px) {
+    #products {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #products h2 {
+        font-size: 22px;
+    }
+    #products .title-line {
+        margin-bottom: 50px;
+    }
+    #products .jumbotron .product-info p {
+        font-size: 18px;
+    }
+}
+

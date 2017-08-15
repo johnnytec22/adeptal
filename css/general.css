@@ -9,7 +9,6 @@ body, html {
     margin-bottom: 70px ;
     width: 100px;
     border : 1px solid #75A6F0;
-    border-radius: 50% !important;
 }
 
 /**active page**/
@@ -121,4 +120,30 @@ nav .navbar-nav a:not(#contact-btn):hover {
     nav .navbar-brand a h3{
         font-size: 20px;
     }
+}
+/**footer**/
+footer {
+    border-top: 2px solid white;
+    background: #11112E;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: dodgerblue;
+    font-size: 15px;
+}
+
+footer i {
+    color: white !important;
+}
+footer ul {
+    margin-bottom: 30px;
+}
+
+footer  p  a span {
+    color: #11112E;
+    background: white;
+    padding: 3px;
+    border-radius: 2px;
+}
+footer p.small {
+    color: white;
 }
