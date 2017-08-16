@@ -223,9 +223,21 @@ i.page-icon {
     }
 }
 
-
-
-
+#hori_line {
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    margin: 0px;
+    padding: 0px;
+    border-width: 2px;
+    border-color: dodgerblue;
+    position: absolute;
+    left:-30%;
+    right: -30%;
+    margin-top: 5px;
+}
 
 /**industries section**/
 #industries {
@@ -233,6 +245,7 @@ i.page-icon {
     padding-bottom: 150px;
     background: white;
 }
+
 .circle-bordered {
     display: inline-block;
     font-size: 22px !important;
@@ -249,7 +262,7 @@ i.page-icon {
 
 @media(max-width: 770px) {
     #industries {
-        padding-top: 20px;
+        padding-top: 70px;
         padding-bottom: 30px;
     }
 
@@ -306,11 +319,18 @@ i.page-icon {
 
 /**testimonies**/
 #testimony {
-    padding: 100px 0;
+    padding: 130px 0 100px 0;
+    background: dodgerblue;
 }
 
-#testimony i {
-    color: dodgerblue;
+#testimony i, #testimony h3, #testimony p {
+    color: white;
+}
+#testimony .testimony-carousel .item h4 {
+    color: white;
+}
+#testimony .title-line {
+    border-color: white !important;
 }
 
 @media(max-width: 770px) {
@@ -318,7 +338,7 @@ i.page-icon {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-
+    
     #testimony h2 {
         font-size: 22px;
     }
@@ -331,7 +351,7 @@ i.page-icon {
 #working_at_adeptal {
     padding-top: 150px;
     padding-bottom: 150px;
-    background: #E5F1FE;
+    background: white;
 }
 
 #working_at_adeptal h2 {
@@ -348,6 +368,7 @@ i.page-icon {
     margin-bottom: 20px;
     font-size: 16px !important;
 }
+
 
 @media(max-width: 770px) {
     #working_at_adeptal {
@@ -369,9 +390,4 @@ i.page-icon {
     }
 }
 
-/**footer**/
-footer {
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
 

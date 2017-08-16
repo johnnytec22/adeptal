@@ -85,3 +85,70 @@ i.page-icon {
     top: 92%;
     left: 8%;
 }
+
+.circle-bordered {
+    display: inline-block;
+    font-size: 40px !important;
+    line-height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+main section i {
+    color: white !important;
+}
+
+#mission p, #vision p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+#mission {
+    padding: 150px 0;
+    background: white;
+}
+#mission .circle-bordered {
+    background: dodgerblue;
+}
+
+#vision {
+    padding: 120px 0;
+    background: white;
+}
+#vision .circle-bordered {
+    background: #09C924;
+}
+
+/**values **/
+#values{
+    padding: 120px 0;
+    background: white;
+}
+#values .value-column {
+    height: 230px;
+}
+#values .circle-bordered {
+    background: red;
+}
+#values .value_hr {
+    border: 1px solid dodgerblue;
+}
+#values h4 {
+    color: dodgerblue;
+    font-size: 20px;
+}
+#values p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6)
+}
+@media(max-width: 768px) and (min-width: 390px) {
+    #values .value-inner {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

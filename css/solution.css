@@ -1,5 +1,8 @@
 /**nav stylings are in the general.css**/
-
+main {
+    padding: 0px;
+    margin: 0px;
+}
 /**header**/
 header {
     background-image: url('../images/solution-img/hero.jpeg');
@@ -73,13 +76,28 @@ section#sustain_at_adeptal p {
 }
 
 
+#slant_line {
+    transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    margin: 0px;
+    padding: 0px;
+    border-width: 2px;
+    border-color: dodgerblue;
+    position: absolute;
+    left:-30%;
+    right: -30%;
+    z-index: 10;
+}
 
 
 
 /**supply Chain**/
 #supply_chain {
     padding: 200px 0;
-    background: #E4DEDE;
+    background: white;
 }
 
 section#supply_chain p {
@@ -116,15 +134,7 @@ section#safety .well p {
     margin-top: 20px;
 }
 
-/**Sustainable Solution Section**/
-section#sus_solution {
-    padding: 200px 0;
-}
 
-section#sus_solution p {
-    font-size: 17px;
-    line-height: 1.6;
-}
 
 @media(max-width: 768px) and (min-width: 390px) {
     section > .container > .row > div.col-lg-6 > p, .solution_paragraphs > p{
