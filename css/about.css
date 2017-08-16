@@ -89,8 +89,8 @@ i.page-icon {
 .circle-bordered {
     display: inline-block;
     font-size: 40px !important;
-    line-height: 80px;
-    width: 80px;
+    line-height: 100px;
+    width: 100px;
     border-radius: 50%;
     text-align: center;
     margin-bottom: 15px;
@@ -100,9 +100,10 @@ main section i {
     color: white !important;
 }
 
-#mission p, #vision p {
-    font-size: 19px;
+#mission p, #vision p, #history p {
+    font-size: 16px;
     line-height: 1.8;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 #mission {
@@ -152,3 +153,12 @@ main section i {
     }
 }
 
+
+/**history stylings**/
+#history {
+    padding: 0 0 120px 0;
+    background: white;
+}
+#history .circle-bordered {
+    background: rgba(0, 0, 0, 0.8);
+}

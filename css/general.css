@@ -123,18 +123,18 @@ nav .navbar-nav a:not(#contact-btn):hover {
 }
 /**footer**/
 footer {
-    background: dodgerblue;
+    background: rgba(0, 0, 0, 0.9);
     padding-top: 15px;
     color: white;
-    font-size: 15px;
 }
 
 footer i {
     color: white !important;
     font-size: 16px;
+    margin: 0px ;
 }
 footer ul {
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 footer a {
