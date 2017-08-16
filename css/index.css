@@ -211,7 +211,7 @@ i.page-icon {
     #services {
         padding-top: 30px;
         margin-top: 0px;
-        padding-bottom: 50px;
+        padding-bottom: 80px;
         margin-bottom: 0px;
     }
 
@@ -234,9 +234,10 @@ i.page-icon {
     border-width: 2px;
     border-color: dodgerblue;
     position: absolute;
-    left:-30%;
-    right: -30%;
+    left: -1.5%;
+    right: -1.5%;
     margin-top: 5px;
+    overflow-x: hidden;
 }
 
 /**industries section**/
@@ -262,7 +263,7 @@ i.page-icon {
 
 @media(max-width: 770px) {
     #industries {
-        padding-top: 70px;
+        padding-top: 80px;
         padding-bottom: 30px;
     }
 

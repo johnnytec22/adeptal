@@ -87,8 +87,8 @@ section#sustain_at_adeptal p {
     border-width: 2px;
     border-color: dodgerblue;
     position: absolute;
-    left:-30%;
-    right: -30%;
+    left: -5%;
+    right: -5%;
     z-index: 10;
 }
 
