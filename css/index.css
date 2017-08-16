@@ -234,8 +234,8 @@ i.page-icon {
     border-width: 2px;
     border-color: dodgerblue;
     position: absolute;
-    left: -1.5%;
-    right: -1.5%;
+    left: -1.7%;
+    right: -1.7%;
     margin-top: 5px;
     overflow-x: hidden;
 }
@@ -321,7 +321,10 @@ i.page-icon {
 /**testimonies**/
 #testimony {
     padding: 130px 0 100px 0;
-    background: dodgerblue;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0868F9), to( dodgerblue));
+    background-image: -webkit-linear-gradient(top, #0868F9,  dodgerblue);
+    background-image: -moz-linear-gradient(top, #0868F9,  dodgerblue);
+    background-image: linear-gradient(to bottom, #0868F9,  dodgerblue);
 }
 
 #testimony i, #testimony h3, #testimony p {
