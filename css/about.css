@@ -80,17 +80,16 @@ header .overlay {
 }
 
 i.page-icon {
-    color: dodgerblue;
     position: absolute;
-    top: 92%;
+    top: 94%;
     left: 8%;
 }
 
 .circle-bordered {
     display: inline-block;
-    font-size: 40px !important;
-    line-height: 100px;
-    width: 100px;
+    font-size: 23px !important;
+    line-height: 80px;
+    width: 80px;
     border-radius: 50%;
     text-align: center;
     margin-bottom: 15px;
@@ -100,10 +99,15 @@ main section i {
     color: white !important;
 }
 
-#mission p, #vision p, #history p {
-    font-size: 16px;
-    line-height: 1.8;
-    color: rgba(0, 0, 0, 0.6);
+#mission p, #vision p {
+    font-size: 19px;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#mission h3, #vision h3, #history h3, #values h3 {
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.65);
 }
 
 #mission {
@@ -111,7 +115,7 @@ main section i {
     background: white;
 }
 #mission .circle-bordered {
-    background: dodgerblue;
+    background: red;
 }
 
 #vision {
@@ -124,14 +128,17 @@ main section i {
 
 /**values **/
 #values{
-    padding: 120px 0;
-    background: white;
+    padding: 120px 0 0 0;
+    background: rgba(0, 0, 0, 0.9)
 }
 #values .value-column {
     height: 230px;
 }
 #values .circle-bordered {
-    background: red;
+    background: dodgerblue;
+}
+#values h3 {
+    color: white;
 }
 #values .value_hr {
     border: 1px solid dodgerblue;
@@ -143,7 +150,7 @@ main section i {
 #values p {
     font-size: 16px;
     line-height: 1.5;
-    color: rgba(0, 0, 0, 0.6)
+    color: white;
 }
 @media(max-width: 768px) and (min-width: 390px) {
     #values .value-inner {
@@ -156,9 +163,54 @@ main section i {
 
 /**history stylings**/
 #history {
-    padding: 0 0 120px 0;
+    padding: 120px 0 120px 0;
     background: white;
 }
 #history .circle-bordered {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/**working at adeptal**/
+#working_at_adeptal {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: white;
+}
+
+#working_at_adeptal h2 {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#working_at_adeptal hr {
+    border-color: dodgerblue !important;
+}
+
+#working_at_adeptal h4, #history h4 {
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 16px !important;
+}
+#working_at_adeptal .circle-bordered {
+    background: goldenrod;
+}
+
+@media(max-width: 770px) {
+    #working_at_adeptal {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #working_at_adeptal h2 {
+        font-size: 22px;
+    }
+    #working_at_adeptal .title-line {
+        margin-bottom: 40px;
+    }
+
+    #working_at_adeptal h4 {
+        line-height: 1.5 ;
+        margin-bottom: 20px;
+        font-size: 14px !important;
+    }
 }

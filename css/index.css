@@ -106,9 +106,7 @@ i.page-icon {
     header .owl-item div.welcome_info p{
         font-size: 14px;
     }
-
 }
-
 /*main content*/
 /*services */
 #services {
@@ -117,40 +115,39 @@ i.page-icon {
     padding-bottom: 50px;
     margin-bottom: 150px;
 }
-
 #services .thumbnail {
     padding: 0px !important;
     border-radius: 0px !important;
     border: 0 !important;
+    width: 300px;
+    margin: 0 auto 50px auto;
 }
-
 #services .thumbnail img {
     width: 100%;
-    border-top-right-radius: 2px;
-    border-top-left-radius: 2px;
+    height: 180px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
-#services .thumbnail .caption span {
-    font-size: 15px;
-}
-
 #services h3 {
     color: black !important;
     margin-top: 30px;
 }
-
-
 #services i {
     color: #09C924;
 }
-
-#services .thumbnail .caption {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
+#services .thumbnail .caption h4 span{
+    font-size: 15px;
+    font-weight: bold;
 }
-
+#services .thumbnail .caption {
+    border-bottom: 1px solid dodgerblue;
+    border-left: 1px solid dodgerblue;
+    border-right: 1px solid dodgerblue;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
 #services .thumbnail .poster {
     cursor: pointer;
     position: relative !important;
@@ -166,11 +163,10 @@ i.page-icon {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(30,144,255, 0.4);
-    opacity: 1;
-    padding: 4%;
-    border-top-right-radius: 2px;
-    border-top-left-radius: 2px;
+    background: rgba(30,144,255,0.1);
+    padding: 2%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 #services .thumbnail .poster .overlay-info .dark_product_overlay{
     position: absolute;
@@ -178,26 +174,23 @@ i.page-icon {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0, 0.6);
+    background: rgba(0,0,0,0.6);
     opacity: 1;
-    padding: 4%;
-    border-top-right-radius: 2px;
-    border-top-left-radius: 2px;
+    padding: 2%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     animation-duration: 0.8s;
     -webkit-animation-duration: 0.8s;
     -moz-animation-duration: 0.8s;
     -o-animation-duration: 0.8s;
     -ms-animation-duration: 0.8s;
 }
-
 #services .thumbnail .poster .overlay-info p {
-    margin-top: 30%;
+    margin-top: 7%;
     color: white;
+    font-size: 13px;
 }
 
-#services .thumbnail:hover .overlay-info {
-    opacity: 1;
-}
 
 @media(max-width: 768px) and (min-width: 390px){
     #services .thumbnail {
@@ -206,7 +199,6 @@ i.page-icon {
         margin-right: auto;
     }
 }
-
 @media(max-width: 770px){
     #services {
         padding-top: 30px;
@@ -222,43 +214,40 @@ i.page-icon {
         margin-bottom: 20px;
     }
 }
-
-#hori_line {
-    transform: rotate(-15deg);
-    -webkit-transform: rotate(-15deg);
-    -o-transform: rotate(-15deg);
-    -ms-transform: rotate(-15deg);
-    -moz-transform: rotate(-15deg);
+.hori_line {
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
     margin: 0px;
     padding: 0px;
     border-width: 2px;
-    border-color: dodgerblue;
     position: absolute;
-    left: -1.7%;
-    right: -1.7%;
+    left: -3%;
+    right: -3%;
     margin-top: 5px;
-    overflow-x: hidden;
 }
-
 /**industries section**/
 #industries {
     padding-top: 150px;
     padding-bottom: 150px;
     background: white;
 }
-
 .circle-bordered {
     display: inline-block;
-    font-size: 22px !important;
-    line-height: 80px;
-    width: 85px;
-    border: 2px solid dodgerblue;
+    font-size: 16px !important;
+    line-height: 100px;
+    width: 100px;
+    background: dodgerblue;
+    background-size: contain;
+    background-position: center;
     border-radius: 50%;
     text-align: center;
     margin-bottom: 15px;
 }
 .industry-icons {
-    color: #2C61EA;
+    color: white;
 }
 
 @media(max-width: 770px) {
@@ -274,8 +263,6 @@ i.page-icon {
         margin-bottom: 50px;
     }
 }
-
-
 
 /**why adeptal **/
 #why_adeptal {
@@ -321,20 +308,21 @@ i.page-icon {
 /**testimonies**/
 #testimony {
     padding: 130px 0 100px 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#0868F9), to( dodgerblue));
-    background-image: -webkit-linear-gradient(top, #0868F9,  dodgerblue);
-    background-image: -moz-linear-gradient(top, #0868F9,  dodgerblue);
-    background-image: linear-gradient(to bottom, #0868F9,  dodgerblue);
+    background: white;
 }
+ #testimony h2 {
+     color: rgba(0,0,0, 0.8)
+ }
 
-#testimony i, #testimony h3, #testimony p {
-    color: white;
+#testimony i, #testimony p {
+    color: dodgerblue;
 }
 #testimony .testimony-carousel .item h4 {
-    color: white;
+    color: rgba(0,0,0, 0.5);
+    font-size: 17px;
 }
 #testimony .title-line {
-    border-color: white !important;
+    border-color: dodgerblue !important;
 }
 
 @media(max-width: 770px) {
@@ -351,47 +339,6 @@ i.page-icon {
     }
 }
 
-/**working at adeptal**/
-#working_at_adeptal {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    background: white;
-}
 
-#working_at_adeptal h2 {
-    color: rgba(0, 0, 0, 0.8);
-}
-
-#working_at_adeptal hr {
-    border-color: dodgerblue !important;
-}
-
-#working_at_adeptal h4 {
-    color: rgba(0, 0, 0, 0.7);
-    line-height: 1.8;
-    margin-bottom: 20px;
-    font-size: 16px !important;
-}
-
-
-@media(max-width: 770px) {
-    #working_at_adeptal {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    #working_at_adeptal h2 {
-        font-size: 22px;
-    }
-    #working_at_adeptal .title-line {
-        margin-bottom: 40px;
-    }
-
-    #working_at_adeptal h4 {
-        line-height: 1.5 ;
-        margin-bottom: 20px;
-        font-size: 14px !important;
-    }
-}
 
 

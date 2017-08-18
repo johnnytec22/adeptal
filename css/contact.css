@@ -89,7 +89,6 @@ header .overlay, #contact_info .overlay {
 }
 
 i.page-icon {
-    color: dodgerblue;
     position: absolute;
     top: 92%;
     left: 8%;
@@ -165,7 +164,7 @@ i.page-icon {
 #contact_info {
     position: relative;
     color: white;
-    margin-bottom: 0 !important;
+    margin-bottom: 0px !important;
     padding: 150px 0;
     background-image: url('../images/contact-img/Contact.jpg');
     background-repeat: no-repeat;

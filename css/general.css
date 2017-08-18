@@ -1,4 +1,4 @@
-body, html {
+body, html, main {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
@@ -10,7 +10,9 @@ body, html {
     width: 100px;
     border : 1px solid #75A6F0;
 }
-
+i.page-icon {
+    color: #09C924;
+}
 /**active page**/
 .active {
     border-color: dodgerblue !important;
@@ -60,9 +62,9 @@ nav .navbar-nav a{
     text-decoration: none !important;
     padding: 6px 15px !important;
     border: 1px solid transparent;
-    font-size: 15px;
+    font-size: 14px;
     margin-left: 10px;
-    font-weight: 580;
+    font-weight: bold;
 }
 
 nav .navbar-nav a:not(#contact-btn):hover {
@@ -123,7 +125,7 @@ nav .navbar-nav a:not(#contact-btn):hover {
 }
 /**footer**/
 footer {
-    background: rgba(0, 0, 0, 0.9);
+    background: black;
     padding-top: 15px;
     color: white;
 }
@@ -134,7 +136,7 @@ footer i {
     margin: 0px ;
 }
 footer ul {
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 footer a {
