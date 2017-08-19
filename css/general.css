@@ -12,7 +12,11 @@ body, html, main {
 }
 i.page-icon {
     color: #09C924;
+    position: absolute;
+    top: 94%;
+    left: 8%;
 }
+
 /**active page**/
 .active {
     border-color: dodgerblue !important;

@@ -78,14 +78,6 @@ header .overlay {
         top: 40%;
     }
 }
-
-i.page-icon {
-    color: dodgerblue;
-    position: absolute;
-    top: 92%;
-    left: 8%;
-}
-
 /**products we server**/
 #products {
     padding-top: 150px;

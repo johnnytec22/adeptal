@@ -87,15 +87,6 @@ header .overlay, #contact_info .overlay {
         line-height: 1.5;
     }
 }
-
-i.page-icon {
-    position: absolute;
-    top: 92%;
-    left: 8%;
-
-}
-
-
 /**contact form**/
 #contact_form {
     padding: 130px 2% 230px 2%;

@@ -79,12 +79,6 @@ header .overlay {
     }
 }
 
-i.page-icon {
-    position: absolute;
-    top: 94%;
-    left: 8%;
-}
-
 .circle-bordered {
     display: inline-block;
     font-size: 23px !important;
@@ -180,11 +174,6 @@ main section i {
 #working_at_adeptal h2 {
     color: rgba(0, 0, 0, 0.8);
 }
-
-#working_at_adeptal hr {
-    border-color: dodgerblue !important;
-}
-
 #working_at_adeptal h4, #history h4 {
     color: rgba(0, 0, 0, 0.7);
     line-height: 1.8;
@@ -192,7 +181,7 @@ main section i {
     font-size: 16px !important;
 }
 #working_at_adeptal .circle-bordered {
-    background: goldenrod;
+    background: gold;
 }
 
 @media(max-width: 770px) {
