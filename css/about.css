@@ -2,7 +2,7 @@
 
 /**header**/
 header {
-    background-image: url('../images/solution-img/hero.jpeg');
+    background-image: url('../images/about-img/about adeptal.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -40,7 +40,7 @@ header .container #header-info p {
 
 header .overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     right: 0;
@@ -82,8 +82,8 @@ header .overlay {
 .circle-bordered {
     display: inline-block;
     font-size: 23px !important;
-    line-height: 80px;
-    width: 80px;
+    line-height: 70px;
+    width: 70px;
     border-radius: 50%;
     text-align: center;
     margin-bottom: 15px;
@@ -106,24 +106,39 @@ main section i {
 
 #mission {
     padding: 150px 0;
-    background: white;
+    background: dodgerblue;
 }
 #mission .circle-bordered {
-    background: red;
+    background:  white;
 }
+#mission p, #mission h3 {
+    color: white;
+}
+
 
 #vision {
     padding: 120px 0;
     background: white;
 }
 #vision .circle-bordered {
-    background: #09C924;
+    background: dodgerblue;
 }
 
 /**values **/
 #values{
     padding: 120px 0 0 0;
-    background: rgba(0, 0, 0, 0.9)
+    background: url('../images/about-img/our values adeptal.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#values .value-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 #values .value-column {
     height: 230px;
@@ -135,7 +150,7 @@ main section i {
     color: white;
 }
 #values .value_hr {
-    border: 1px solid dodgerblue;
+    border: 1px solid #5FB9F9;
 }
 #values h4 {
     color: dodgerblue;
@@ -161,7 +176,7 @@ main section i {
     background: white;
 }
 #history .circle-bordered {
-    background: rgba(0, 0, 0, 0.5);
+    background:  dodgerblue;
 }
 
 /**working at adeptal**/
@@ -181,7 +196,7 @@ main section i {
     font-size: 16px !important;
 }
 #working_at_adeptal .circle-bordered {
-    background: gold;
+    background: dodgerblue;
 }
 
 @media(max-width: 770px) {

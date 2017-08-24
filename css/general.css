@@ -2,8 +2,7 @@ body, html, main {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
-} 
-
+}
 .title-line {
     margin-top: 0px !important;
     margin-bottom: 70px ;
@@ -11,19 +10,16 @@ body, html, main {
     border : 1px solid #75A6F0;
 }
 i.page-icon {
-    color: #09C924;
+    color: dodgerblue;
     position: absolute;
     top: 94%;
     left: 8%;
 }
-
 /**active page**/
 .active {
     border-color: dodgerblue !important;
     border-radius: 2px;
 }
-
-
 .btn-primary {
     color: white;
     background: dodgerblue;
@@ -32,29 +28,36 @@ i.page-icon {
     border-radius: 2px !important;
     border: 1px solid transparent !important;
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
     color: dodgerblue !important;
     background: transparent !important;
     border: 1px solid dodgerblue !important;
 }
-
 nav {
     border: 0px !important;
     transition: all 0.5s ease-in-out;
 }
-nav .navbar-brand h3, nav .navbar-brand i {
+nav .navbar-brand h3 {
     padding: 0 !important;
     margin: 0 !important;
+    position: absolute;
+    left: 50px;
 }
-
 nav .navbar-brand {
     height: 100% !important;
-    width: 175px;
     margin-left: 20px;
-    margin-top: 14px;
+    margin-top: 18px;
+    position: relative;
 }
 
-
+nav .navbar-brand img {
+    position: absolute;
+    top: -10px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 5%;
+}
 nav .navbar-brand a, footer p a{
     text-decoration: none !important;
 }
@@ -70,12 +73,10 @@ nav .navbar-nav a{
     margin-left: 10px;
     font-weight: bold;
 }
-
 nav .navbar-nav a:not(#contact-btn):hover {
     border-color: dodgerblue !important;
     border-radius: 2px;
 }
-
 #contact-btn {
     margin-left: 10px !important;
     color: white !important;
@@ -83,7 +84,6 @@ nav .navbar-nav a:not(#contact-btn):hover {
     border-radius: 2px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15);
 }
-
 .navbar-toggle{
     margin-top: 12px !important;
     border: 0 !important;
@@ -92,8 +92,6 @@ nav .navbar-nav a:not(#contact-btn):hover {
 .navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
     background: transparent !important;
 }
-
-
 .nav-dropdown-background {
     background: white;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
@@ -101,7 +99,6 @@ nav .navbar-nav a:not(#contact-btn):hover {
 .nav-link-dropdown-color {
     color: rgba(0, 0, 0, 0.4) !important;
 }
-
 @media(max-width: 767px){
     #contact-btn {
         top: 0 !important;
@@ -114,26 +111,44 @@ nav .navbar-nav a:not(#contact-btn):hover {
     .navbar-nav > li > a {
         text-align: center;
     }
-
     .title-line {
         margin-top: 0px !important;
         margin-bottom: 40px ;
         width: 100px; 
     }
 }
-
 @media(max-width: 400px){
     nav .navbar-brand a h3{
         font-size: 20px;
     }
 }
 /**footer**/
+
 footer {
-    background: black;
+    background: url('../images/index-img/footer.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 15px;
     color: white;
+    position: relative;
+    height: 150px;
 }
-
+.footer-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(30,144,255, 0.8);
+    z-index: 0;
+}
+.footer-data {
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+}
 footer i {
     color: white !important;
     font-size: 16px;
@@ -142,7 +157,11 @@ footer i {
 footer ul {
     margin-top: 0px;
 }
-
 footer a {
     color: white;
+}
+@media(max-width: 400px) {
+ footer ul > p {
+     font-size: 14px;
+ }
 }

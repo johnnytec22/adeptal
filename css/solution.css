@@ -5,7 +5,7 @@ main {
 }
 /**header**/
 header {
-    background-image: url('../images/solution-img/hero.jpeg');
+    background-image: url('../images/solution-img/sustainability.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -30,7 +30,7 @@ header .container #header-info p {
 
 header .overlay, #safety .overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     right: 0;
@@ -102,8 +102,8 @@ section#supply_chain p {
 
 /**safety**/
 section#safety {
-    padding: 150px 0;
-    background-image: url('../images/index-img/adeptal.jpg');
+    padding: 100px 0;
+    background-image: url('../images/solution-img/adeptal environtment safety.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -113,7 +113,7 @@ section#safety {
 
 section#safety .well {
     padding: 10% 10% !important;
-    border-radius: 0 !important;
+    border-radius: 4px !important;
     border: 0 !important;
     color: white !important;
 }

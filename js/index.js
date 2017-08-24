@@ -12,10 +12,10 @@ $(document).ready(function() {
         animateIn: 'fadeIn'
     });
 
-    $(".owl-item .welcome_info").on('mouseenter', function() {
+    $(".owl-item .header_info").on('mouseenter', function() {
         showcase.trigger('stop.owl.autoplay')
     });
-    $(".owl-item .welcome_info").on('mouseleave', function() {
+    $(".owl-item .header_info").on('mouseleave', function() {
         showcase.trigger('play.owl.autoplay')
     });
 
@@ -62,9 +62,15 @@ $(document).ready(function() {
     //this runs when the screen is resized 
     $(window).bind('resize',  whyAdeptalColumnTextAlignment);
 
-    
+    var isToggled = false;
 
-
-
-
-})
+    $('#industries .container #industries_toggle .btn-primary').on('click', function() {
+        if (isToggled) {
+            $(this).html('More');
+            isToggled = false;
+        }else{
+            $(this).html('Less');
+            isToggled = true;   
+        }
+    });
+});

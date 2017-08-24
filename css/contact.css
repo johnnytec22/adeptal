@@ -15,7 +15,7 @@
 }
 /**header**/
 header {
-    background-image: url('../images/solution-img/hero.jpeg');
+    background-image: url('../images/contact-img/adeptal contact us1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -40,7 +40,7 @@ header .container #header-info p {
 
 header .overlay, #contact_info .overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     right: 0;
@@ -157,7 +157,7 @@ header .overlay, #contact_info .overlay {
     color: white;
     margin-bottom: 0px !important;
     padding: 150px 0;
-    background-image: url('../images/contact-img/Contact.jpg');
+    background-image: url('../images/contact-img/adeptal contact info.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -225,4 +225,17 @@ header .overlay, #contact_info .overlay {
     #contact_info #opening_hours h4#opening_hours_header {
         font-size: 20px !important;
     }
+}
+/**footer**/
+footer {
+    background: white;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.9);
+}
+footer i {
+    color: black !important;
+}
+
+footer a {
+    color: rgba(0, 0, 0, 0.9);
 }

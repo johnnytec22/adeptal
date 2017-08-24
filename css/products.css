@@ -2,7 +2,7 @@
 
 /**header**/
 header {
-    background-image: url('../images/solution-img/hero.jpeg');
+    background-image: url('../images/product-img/adeptal product applications1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -40,7 +40,7 @@ header .container #header-info p {
 
 header .overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     right: 0;
@@ -87,28 +87,31 @@ header .overlay {
 
 
 #products .jumbotron {
+    cursor: pointer;
     height: 240px;
     position: relative;
-    background: white !important;
+    background: white;
     border: 1px solid dodgerblue;
     padding-top: 0% !important;
     padding-bottom: 0% !important;
     border-radius: 3px !important;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2)
 }
+
 #products .product-header-icons {
     color: #FD2EAC;
     font-size: 35px
 }
 #products .product-icons {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 #products .jumbotron .product-info p {
     color: rgba(0, 0, 0, 0.5);
 }
 #products .jumbotron .product-overlay  p{
-    font-size: 15px !important;
-    color: white !important;
+    font-size: 15px;
+    color: white;
 }
 #products .jumbotron .product-overlay  p#first-paragraph {
     padding-top: 15%;
@@ -161,14 +164,12 @@ header .overlay {
         padding-bottom: 50px;
     }
 
-    #products h2 {
-        font-size: 22px;
-    }
-    #products .title-line {
-        margin-bottom: 50px;
-    }
     #products .jumbotron .product-info p {
         font-size: 18px;
     }
 }
-
+@media(max-width: 360px) {
+    #products .jumbotron .product-overlay p {
+        font-size: 13px;
+    }
+}

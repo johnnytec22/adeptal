@@ -1,6 +1,5 @@
 
 /**nav stylings are in the general.css**/
-
 /**header stylings**/
 header {
     padding: 0px !important;
@@ -11,10 +10,11 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
+    overflow-x: hidden;
 }
 header .overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.52);
+    background: rgba(0,0,0,0.8);
     top: 0;
     left: 0;
     right: 0;
@@ -23,52 +23,51 @@ header .overlay {
 }
 #showcase .owl-item {
     width: 100%;
-    max-height: 600px !important;
+    max-height: 550px !important;
 }
-
 #showcase .owl-item img {
-    max-height: 600px;
+    max-height: 550px;
 }
-
-header .owl-item div.welcome_info {
+header .owl-item div.header_info {
     position: absolute;
-    top: 45%;
-    left: 0;
+    top: 48%;
     right: 0;
+    left: 0;
     color: white;
 }
-header .owl-item div.welcome_info p {
-    font-size: 17px;
+header .owl-item div.header_info p {
+    color: whitesmoke;
+    font-size: 19px;
     line-height: 1.6;
 }
-
+header .owl-item div.header_info i {
+    color: dodgerblue;
+}
 i.page-icon {
     top: 87%;
     z-index: 3;
 }
-
-@media(max-width: 600px) {
-    header .owl-item div.welcome_info h1{
+@media(min-width: 768px) {
+    header .owl-item div.header_info {
+        right: 23%;
+        left: 23%;
+    }
+}
+@media(max-width: 650px) {
+    header .owl-item div.header_info h1{
         font-size: 26px;
     }
-    header .owl-item div.welcome_info p{
+    header .owl-item div.header_info p{
         font-size: 16px;
     }
 }
-
-
-
-
 @media(max-width: 450px) {
-    #showcase {
-        overflow-x: hidden;
-    }
     header .overlay {
         height: 290px;
         width: 100%;
     }
-    header .owl-item div.welcome_info {
-        top: 45%;
+    header .owl-item div.header_info {
+        top: 38%;
     }
     #showcase .owl-item img {
         height: 290px;
@@ -76,31 +75,28 @@ i.page-icon {
         overflow-x: hidden !important;
     }
     header .owl-item h1 {
-        font-size: 25px;
+        font-size: 24px;
         color: white;
     }
-    header .owl-item div.welcome_info p{
+    header .owl-item div.header_info p{
         font-size: 15px;
+        line-height: 1.4;
     }
-
 }
-
 @media(max-width: 400px){
     #showcase .owl-item img {
         height: 280px;
         width: 401px;
         overflow-x: hidden !important;
     }
-
     header .overlay {
         height: 280px;
         width: 100%;
     }
-
-    header .owl-item div.welcome_info h1{
-        font-size: 20px;
+    header .owl-item div.header_info h1{
+        font-size: 21px;
     }
-    header .owl-item div.welcome_info p{
+    header .owl-item div.header_info p{
         font-size: 14px;
     }
 }
@@ -153,14 +149,13 @@ i.page-icon {
     left: 0;
     right: 0;
 }
-
 #services .thumbnail .poster .overlay-info {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(30,144,255,0.2);
+    background: rgba(30,144,255,0.5);
     padding: 2%;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
@@ -195,7 +190,6 @@ i.page-icon {
         padding-bottom: 80px;
         margin-bottom: 0px;
     }
-
     #services h2 {
         font-size: 20px;
     }
@@ -203,45 +197,46 @@ i.page-icon {
         margin-bottom: 20px;
     }
 }
-.hori_line {
-    transform: rotate(-20deg);
-    -webkit-transform: rotate(-20deg);
-    -o-transform: rotate(-20deg);
-    -ms-transform: rotate(-20deg);
-    -moz-transform: rotate(-20deg);
-    margin: 0px;
-    padding: 0px;
-    border-width: 2px;
-    position: absolute;
-    left: -3%;
-    right: -3%;
-    margin-top: 5px;
-}
 /**industries section**/
 #industries {
     padding-top: 150px;
-    padding-bottom: 150px;
-    background: white;
+    padding-bottom: 70px;
+    background: dodgerblue;
 }
 .circle-bordered {
     display: inline-block;
-    font-size: 16px !important;
-    line-height: 80px;
-    width: 80px;
-    background: dodgerblue;
+    font-size: 18px !important;
+    height: 100px;
+    width: 100px;
+    background: white;
     background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
-    text-align: center;
     margin-bottom: 15px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.2);
+    position: relative;
 }
-.industry-icons {
-    color: white;
+ #industries h4,#industries h2,#industries i {
+     color: white;
+ }
+
+#industries .btn-primary {
+    color: dodgerblue !important;
+    background: white !important;
+    border: 1px solid transparent !important;
+}
+
+#industries .container #industries_toggle .btn-primary {
+    color: white !important;
+    background: transparent !important;
+    border: 1px solid white !important;
 }
 
 @media(max-width: 770px) {
     #industries {
-        padding-top: 80px;
+        padding-top: 70px;
         padding-bottom: 30px;
     }
 
@@ -252,12 +247,10 @@ i.page-icon {
         margin-bottom: 50px;
     }
 }
-
 /**why adeptal **/
 #why_adeptal {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    background-image: url('../images/index-img/adeptal.jpg');
+    padding: 60px 0;
+    background-image: url('../images/index-img/why adeptal.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -267,18 +260,22 @@ i.page-icon {
 
 #why_adeptal .overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.52);
+    background: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
 }
-
 #why_adeptal .content {
     padding-bottom: 30px;
     padding-top: 30px;
 }
-
+#why_adeptal i {
+    color: #09C924;
+}
+#why_adeptal h4 {
+    color: dodgerblue;
+}
 @media(max-width: 770px) {
     #why_adeptal {
         padding-top: 50px;
@@ -291,20 +288,20 @@ i.page-icon {
     #why_adeptal .title-line {
         margin-bottom: 40px;
     }
-
 }
-
 /**testimonies**/
 #testimony {
     padding: 130px 0 100px 0;
     background: white;
 }
  #testimony h2 {
-     color: rgba(0,0,0, 0.8)
+     color: rgba(0,0,0, 0.8);
  }
-
-#testimony i, #testimony p {
+#testimony i {
     color: dodgerblue;
+}
+#testimony p {
+    color: black;
 }
 #testimony .testimony-carousel .item h4 {
     color: rgba(0,0,0, 0.5);
@@ -313,13 +310,11 @@ i.page-icon {
 #testimony .title-line {
     border-color: dodgerblue !important;
 }
-
 @media(max-width: 770px) {
     #testimony {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    
     #testimony h2 {
         font-size: 22px;
     }
