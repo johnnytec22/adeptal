@@ -16,7 +16,7 @@ body, html, main {
     margin: 0;
     font-family: Josefin;
 }
-header #header-info h1, header .owl-item div.header_info h1 {
+header #header-info h1, header div.header_info h1 {
     font-family: Calligraf;
     font-size: 40px;
 }
@@ -131,7 +131,7 @@ nav .navbar-nav a:not(#contact-btn):hover {
 }
 @media(max-width: 850px) {
     nav .navbar-nav a {
-        font-size: 14.5px;
+        font-size: 16px;
     }
 }
 @media(max-width: 767px){

@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="msapplication-tap-highlight" content="no" />
 
         <!--stylesheets-->
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -15,6 +16,11 @@
         <link rel="stylesheet" type="" href="css/owl.theme.default.css">
         <link rel="stylesheet" href="css/general.css">
         <link href="css/index.css" rel="stylesheet">
+        <!--[if IE]>
+
+            <link rel="stylesheet" type="text/css" href="css/ie.css">
+
+        <![endif]-->
         
         
     </head>
@@ -52,7 +58,17 @@
         </nav><!--end of top navigation-->
 
         <header class="text-center">
-            
+            <!--ie and edge header -->
+            <div id="ie_and_edge_header">
+                <div class="overlay"></div>
+                <div class="text-center header_info">
+                    <h1 class="text-center"> <i  class="fa fa-building fa-fw"></i> Welcome to Adeptal</h1>
+                    <br/>
+                    <p>The Home of Sterling and Sustainable <i  class="fa fa-flask fa-fw"></i>Chemicals for your Industry</p>
+                </div>
+            </div>
+
+            <!--other browsers header-->
             <div class="owl-carousel owl-theme" id="showcase">
                 
                 <div class="owl-item">

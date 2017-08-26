@@ -1,6 +1,11 @@
 
+header #ie_and_edge_header {
+    visibility: hidden;
+    display: none;
+}
 /**nav stylings are in the general.css**/
 /**header stylings**/
+
 header {
     padding: 0px !important;
     margin: 0px !important;
@@ -11,7 +16,7 @@ header {
     right: 0;
     bottom: 0;
     overflow-x: hidden;
-    background: #FFEDFF;
+    background: white;
 }
 header .overlay {
     position: absolute;
@@ -29,19 +34,19 @@ header .overlay {
 #showcase .owl-item img {
     max-height: 550px;
 }
-header .owl-item div.header_info {
+header div.header_info {
     position: absolute;
     top: 48%;
     right: 0;
     left: 0;
     color: white;
 }
-header .owl-item div.header_info p {
+header div.header_info p {
     color: whitesmoke;
     font-size: 19px;
     line-height: 1.6;
 }
-header .owl-item div.header_info i {
+header div.header_info i {
     color: #09C924;
 }
 i.page-icon {
@@ -49,16 +54,16 @@ i.page-icon {
     z-index: 3;
 }
 @media(min-width: 768px) {
-    header .owl-item div.header_info {
+    header div.header_info {
         right: 23%;
         left: 23%;
     }
 }
 @media(max-width: 650px) {
-    header .owl-item div.header_info h1{
+    header div.header_info h1{
         font-size: 26px;
     }
-    header .owl-item div.header_info p{
+    header div.header_info p{
         font-size: 16px;
     }
 }
@@ -67,7 +72,7 @@ i.page-icon {
         height: 290px;
         width: 100%;
     }
-    header .owl-item div.header_info {
+    header div.header_info {
         top: 38%;
     }
     #showcase .owl-item img {
@@ -75,12 +80,12 @@ i.page-icon {
         width: 451px;
         overflow-x: hidden !important;
     }
-    header .owl-item h1 {
-        font-size: 24px;
+    header h1 {
+        font-size: 26px;
         color: white;
     }
-    header .owl-item div.header_info p{
-        font-size: 15px;
+    header div.header_info p{
+        font-size: 16px;
         line-height: 1.4;
     }
 }
@@ -94,19 +99,97 @@ i.page-icon {
         height: 280px;
         width: 100%;
     }
-    header .owl-item div.header_info h1{
-        font-size: 21px;
+    header div.header_info h1{
+        font-size: 25px;
     }
-    header .owl-item div.header_info p{
-        font-size: 14px;
+    header div.header_info p{
+        font-size: 15px;
     }
 }
+/* IE10+ CSS styles go here */
+/**ie and edge overlay and stylings**/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+    .owl-carousel, section#testimony  {
+        display: none;
+        visibility: hidden;
+    }
+    
+    header {
+        background: url('../images/index-img/adeptal welcome.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+        color: white;
+    }
+    header #ie_and_edge_header {
+        visibility: visible;
+        display: block;
+    }
+}
+@media (max-width: 800px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+    header {
+        height: 400px;
+    }
+}
+@media (max-width: 600px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+    header {
+        height: 300px;
+    }
+}
+@media (max-width: 400px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+    header {
+        height: 280px;
+    }
+}
+
+/* IE Edge 12+ CSS styles go here */ 
+@supports (-ms-accelerator: true) {
+    /* IE Edge 12+ CSS styles go here */ 
+    .owl-carousel, section#testimony {
+        visibility: hidden;
+        display: none;
+    }
+    header {
+        background: url('../images/index-img/adeptal welcome.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+        color: white;
+    }
+    header #ie_and_edge_header {
+        visibility: visible;
+        display: block;
+    }
+    @media(max-width: 800px) {
+        header {
+            height: 400px !important;
+        }
+    }
+    @media(max-width: 600px) {
+        header {
+            height: 300px !important;
+        }
+    }
+    @media(max-width: 400px) {
+        header {
+            height: 280px !important;
+        }
+    }
+
+}/**end of ie and edge browsers styles**/
+
+
+
 /*main content*/
 /*services */
 #services {
     padding-top: 150px;
     padding-bottom: 120px;
-    background: #FFEDFF;
+    background: white;
 }
 #services .thumbnail {
     padding: 0px !important;
@@ -156,7 +239,7 @@ i.page-icon {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(128,0,128, 0.6);
+    background: rgba(128,0,128, 0.5);
     padding: 2%;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
@@ -211,8 +294,8 @@ i.page-icon {
 .circle-bordered {
     display: inline-block;
     font-size: 18px !important;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     background: white;
     background-size: contain;
     background-repeat: no-repeat;
