@@ -200,9 +200,13 @@ i.page-icon {
 }
 /**industries section**/
 #industries {
+    position: relative;
     padding-top: 150px;
     padding-bottom: 70px;
-    background: rgba(128, 0, 128, 0.8);
+    background-image: url('../images/index-img/adeptal industries we serve1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .circle-bordered {
     display: inline-block;
@@ -218,6 +222,14 @@ i.page-icon {
     border: 5px solid white;
     box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.3);
     position: relative;
+}
+#industries .overlay {
+    position: absolute;
+    background: rgba(128,0,128, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 #industries h2 {
      color: white;
@@ -249,21 +261,19 @@ i.page-icon {
 /**why adeptal **/
 #why_adeptal {
     padding: 60px 0;
-    background-image: url('../images/index-img/why adeptal.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
+    background: white;
+    color: black;
     position: relative;
 }
-
-#why_adeptal .overlay {
+#why_adeptal img {
     position: absolute;
-    background: rgba(0,0,0, 0.9);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 40%;
+    left: 5%;
+    height: 280px;
+    width: 230px;
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 2px 3px 10px 2px rgba(0,0,0, 0.2)
 }
 #why_adeptal .content {
     padding-bottom: 30px;
@@ -273,7 +283,7 @@ i.page-icon {
     color: #09C924;
 }
 #why_adeptal h4 {
-    color: white;
+    color: rgba(0,0,0, 0.8);
     font-size: 20px;
 }
 #why_adeptal p {
@@ -294,7 +304,7 @@ i.page-icon {
 }
 /**testimonies**/
 #testimony {
-    padding: 130px 0 100px 0;
+    padding: 150px 0 150px 0;
     background: white;
 }
  #testimony h2 {
@@ -312,7 +322,7 @@ i.page-icon {
 }
 #testimony .testimony-carousel .item h4 {
     color: rgba(0,0,0, 0.5);
-    font-size: 17px;
+    font-size: 20px;
 }
 #testimony .title-line {
     border-color: #09C924 !important;
