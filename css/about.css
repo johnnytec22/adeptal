@@ -40,7 +40,7 @@ header .container #header-info p {
 
 header .overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(128, 0, 128, 0.7);
     top: 0;
     left: 0;
     right: 0;
@@ -87,6 +87,7 @@ header .overlay {
     border-radius: 50%;
     text-align: center;
     margin-bottom: 15px;
+    background: #09C924;
 }
 
 main section i {
@@ -94,36 +95,45 @@ main section i {
 }
 
 #mission p, #vision p {
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.6;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.8);
 }
 
-#mission h3, #vision h3, #history h3, #values h3 {
+#mission h3, #vision h3, #history h3, #values h3, #working_at_adeptal h3 {
     font-size: 32px;
-    color: rgba(0, 0, 0, 0.65);
+    color: black;
+    font-family: Baloo;
 }
 
 #mission {
     padding: 150px 0;
-    background: dodgerblue;
-}
-#mission .circle-bordered {
-    background:  white;
-}
-#mission p, #mission h3 {
-    color: white;
+    background: white;
 }
 
+#mission h3 {
+    color: black;
+}
 
 #vision {
     padding: 120px 0;
     background: white;
 }
-#vision .circle-bordered {
-    background: dodgerblue;
+@media(max-width: 600px) {
+    #mission h3, #vision h3, #history h3, #values h3, #working_at_adeptal h3 {
+        font-size: 25px;
+    }
+    #mission {
+        padding: 70px 0;
+    }
+    #vision {
+        padding: 70px 0;
+    }
+    #mission p, #vision p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
 }
-
 /**values **/
 #values{
     padding: 120px 0 0 0;
@@ -134,7 +144,7 @@ main section i {
 }
 #values .value-overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(128, 0, 128, 0.8);
     top: 0;
     left: 0;
     right: 0;
@@ -143,21 +153,19 @@ main section i {
 #values .value-column {
     height: 230px;
 }
-#values .circle-bordered {
-    background: dodgerblue;
-}
 #values h3 {
     color: white;
 }
 #values .value_hr {
-    border: 1px solid #5FB9F9;
+    border: 1px solid #09C924;
 }
 #values h4 {
-    color: dodgerblue;
-    font-size: 20px;
+    color: white;
+    font-size: 23px;
+    font-family: Baloo;
 }
 #values p {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.5;
     color: white;
 }
@@ -175,9 +183,7 @@ main section i {
     padding: 120px 0 120px 0;
     background: white;
 }
-#history .circle-bordered {
-    background:  dodgerblue;
-}
+
 
 /**working at adeptal**/
 #working_at_adeptal {
@@ -186,19 +192,12 @@ main section i {
     background: white;
 }
 
-#working_at_adeptal h2 {
-    color: rgba(0, 0, 0, 0.8);
-}
 #working_at_adeptal h4, #history h4 {
-    color: rgba(0, 0, 0, 0.7);
-    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.7;
     margin-bottom: 20px;
-    font-size: 16px !important;
+    font-size: 18px !important;
 }
-#working_at_adeptal .circle-bordered {
-    background: dodgerblue;
-}
-
 @media(max-width: 770px) {
     #working_at_adeptal {
         padding-top: 50px;
@@ -206,15 +205,14 @@ main section i {
     }
 
     #working_at_adeptal h2 {
-        font-size: 22px;
+        font-size: 25px;
     }
     #working_at_adeptal .title-line {
         margin-bottom: 40px;
     }
 
-    #working_at_adeptal h4 {
+    #working_at_adeptal h4,#history h4  {
         line-height: 1.5 ;
-        margin-bottom: 20px;
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
 }

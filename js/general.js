@@ -12,7 +12,7 @@ $(document).ready(function() {
             $('nav .navbar-toggle .icon-bar').css('background', 'dodgerblue');
             $('nav .navbar-brand h3').css('color', 'purple');
             $('nav .navbar-nav a').css('color', 'rgba(0, 0, 0, 0.6)');
-            $('nav').css('background', 'white').css('box-shadow', '0px 6px 10px rgba(0, 0, 0, 0.15)');
+            $('nav').css('background', 'white').css('box-shadow', '0px 6px 10px rgba(0, 0, 0, 0.2)');
         }
     }
     /**runs on load */
@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     //for hidding and showing page-icons
     function determinePageIconVisibility() {
-        if ( $(window).width() < 768) {
+        if ( $(window).width() < 769) {
             $('header i.page-icon').hide();
         }else{
             $('header i.page-icon').show();

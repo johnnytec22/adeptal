@@ -1,37 +1,64 @@
+@font-face {
+    font-family: Baloo;
+    src: url('../fonts/BalooBhaijaan-Regular.ttf');
+}
+@font-face {
+    font-family: Josefin;
+    src: url('../fonts/JosefinSans-Regular.ttf');
+}
+@font-face {
+    font-family: Calligraf;
+    src: url('../fonts/Calligraffitti-Regular.ttf');
+}
 body, html, main {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    font-family: Josefin;
+}
+header #header-info h1, header .owl-item div.header_info h1 {
+    font-family: Calligraf;
+    font-size: 40px;
+}
+header .container #header-info p {
+    font-size: 18px;
+    line-height: 1.5;
 }
 .title-line {
     margin-top: 0px !important;
     margin-bottom: 70px ;
     width: 60px;
-    border : 1px solid #75A6F0;
+    border : 1px solid #09C924;
 }
 i.page-icon {
-    color: dodgerblue;
+    color: #09C924;
     position: absolute;
     top: 94%;
     left: 8%;
 }
 /**active page**/
 .active {
-    border-color: dodgerblue !important;
+    border-color: #09C924 !important;
     border-radius: 2px;
 }
 .btn-primary {
     color: white;
-    background: dodgerblue;
+    background: #09C924;
     padding: 7px 20px !important;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 2px !important;
     border: 1px solid transparent !important;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+}
+@media(max-width: 500px){
+    .btn-primary {
+        font-size: 16px;
+    }
 }
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-    color: dodgerblue !important;
+    color: #09C924 !important;
     background: transparent !important;
-    border: 1px solid dodgerblue !important;
+    border: 1px solid #09C924 !important;
 }
 nav {
     border: 0px !important;
@@ -42,6 +69,8 @@ nav .navbar-brand h3 {
     margin: 0 !important;
     position: absolute;
     left: 50px;
+    font-family: Baloo;
+    font-size: 30px;
 }
 nav .navbar-brand {
     height: 100% !important;
@@ -71,18 +100,19 @@ nav .navbar-nav a{
     border: 1px solid transparent;
     font-size: 14px;
     margin-left: 10px;
-    font-weight: bold;
+    font-family: Baloo;
+    font-size: 16px;
 }
 nav .navbar-nav a:not(#contact-btn):hover {
-    border-color: dodgerblue !important;
+    border-color: #09C924 !important;
     border-radius: 2px;
 }
 #contact-btn {
     margin-left: 10px !important;
     color: white !important;
-    background: dodgerblue !important;
+    background: #09C924 !important;
     border-radius: 2px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.15);
 }
 .navbar-toggle{
     margin-top: 12px !important;
@@ -98,6 +128,11 @@ nav .navbar-nav a:not(#contact-btn):hover {
 }
 .nav-link-dropdown-color {
     color: rgba(0, 0, 0, 0.4) !important;
+}
+@media(max-width: 850px) {
+    nav .navbar-nav a {
+        font-size: 14.5px;
+    }
 }
 @media(max-width: 767px){
     #contact-btn {
@@ -115,6 +150,9 @@ nav .navbar-nav a:not(#contact-btn):hover {
         margin-top: 0px !important;
         margin-bottom: 40px ;
         width: 100px; 
+    }
+    nav .navbar-brand a h3{
+        font-size: 25px;
     }
 }
 @media(max-width: 400px){
@@ -139,7 +177,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(30,144,255, 0.8);
+    background: rgba(128,0,128, 0.8);
     z-index: 0;
 }
 .footer-data {
@@ -150,7 +188,7 @@ footer {
     right: 0;
 }
 footer i {
-    color: white !important;
+    color: #09C924 !important;
     font-size: 16px;
     margin: 0px ;
 }

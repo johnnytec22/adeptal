@@ -11,10 +11,11 @@ header {
     right: 0;
     bottom: 0;
     overflow-x: hidden;
+    background: #FFEDFF;
 }
 header .overlay {
     position: absolute;
-    background: rgba(0,0,0,0.8);
+    background: rgba(128,0,128, 0.7);
     top: 0;
     left: 0;
     right: 0;
@@ -41,7 +42,7 @@ header .owl-item div.header_info p {
     line-height: 1.6;
 }
 header .owl-item div.header_info i {
-    color: dodgerblue;
+    color: #09C924;
 }
 i.page-icon {
     top: 87%;
@@ -103,17 +104,16 @@ i.page-icon {
 /*main content*/
 /*services */
 #services {
-    padding-top: 50px;
-    margin-top: 100px;
-    padding-bottom: 50px;
-    margin-bottom: 150px;
+    padding-top: 150px;
+    padding-bottom: 120px;
+    background: #FFEDFF;
 }
 #services .thumbnail {
     padding: 0px !important;
     border-radius: 3px !important;
     border: 0 !important;
     margin: 0 auto 50px auto;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0, 0.2);
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0, 0.2);
 }
 @media(min-width: 350px) {
     #services .thumbnail {
@@ -134,8 +134,9 @@ i.page-icon {
     color: #09C924;
 }
 #services .thumbnail .caption h4 span{
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 16px;
+    font-family: Baloo;
+    color: rgba(0,0,0, 0.8);
 }
 #services .thumbnail .caption {
     padding-top: 0px !important;
@@ -155,7 +156,7 @@ i.page-icon {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(30,144,255,0.5);
+    background: rgba(128,0,128, 0.6);
     padding: 2%;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
@@ -178,9 +179,9 @@ i.page-icon {
     -ms-animation-duration: 0.8s;
 }
 #services .thumbnail .poster .overlay-info p {
-    margin-top: 7%;
+    margin-top: 5%;
     color: white;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 @media(max-width: 770px){
@@ -201,7 +202,7 @@ i.page-icon {
 #industries {
     padding-top: 150px;
     padding-bottom: 70px;
-    background: dodgerblue;
+    background: rgba(128, 0, 128, 0.8);
 }
 .circle-bordered {
     display: inline-block;
@@ -212,28 +213,26 @@ i.page-icon {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 50%;
+    border-radius: 5%;
     margin-bottom: 15px;
     border: 5px solid white;
-    box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.3);
     position: relative;
 }
- #industries h4,#industries h2,#industries i {
+#industries h2 {
      color: white;
  }
-
-#industries .btn-primary {
-    color: dodgerblue !important;
-    background: white !important;
-    border: 1px solid transparent !important;
+#industries i {
+    color: #09C924;
 }
-
+#industries h4 {
+    font-family: Josefin;
+    font-size: 19px;
+    color: white;
+}
 #industries .container #industries_toggle .btn-primary {
-    color: white !important;
-    background: transparent !important;
-    border: 1px solid white !important;
+    width: 110px;
 }
-
 @media(max-width: 770px) {
     #industries {
         padding-top: 70px;
@@ -260,7 +259,7 @@ i.page-icon {
 
 #why_adeptal .overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0,0,0, 0.9);
     top: 0;
     left: 0;
     right: 0;
@@ -274,7 +273,11 @@ i.page-icon {
     color: #09C924;
 }
 #why_adeptal h4 {
-    color: dodgerblue;
+    color: white;
+    font-size: 20px;
+}
+#why_adeptal p {
+    font-size: 16px;
 }
 @media(max-width: 770px) {
     #why_adeptal {
@@ -297,18 +300,22 @@ i.page-icon {
  #testimony h2 {
      color: rgba(0,0,0, 0.8);
  }
+
+#testimony > div > i {
+    color: #09C924;
+}
 #testimony i {
     color: dodgerblue;
 }
 #testimony p {
-    color: black;
+    color: gray;
 }
 #testimony .testimony-carousel .item h4 {
     color: rgba(0,0,0, 0.5);
     font-size: 17px;
 }
 #testimony .title-line {
-    border-color: dodgerblue !important;
+    border-color: #09C924 !important;
 }
 @media(max-width: 770px) {
     #testimony {
@@ -322,7 +329,9 @@ i.page-icon {
         margin-bottom: 50px;
     }
 }
-
+#why_adeptal h2, #testimony h2, #services h2, #industries h2, #why_adeptal h4 {
+    font-family: Baloo;
+}
 
 
 

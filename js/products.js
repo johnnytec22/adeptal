@@ -4,12 +4,10 @@ $(document).ready(function() {
     $('#products .jumbotron').on({
         'mouseenter': function() {
             var color = $(this).find('i').css('color');
-            $(this).css('border-color', color);
             $(this).find('div.product-info').addClass('product-info-moveup');
             $(this).find('div.product-overlay').css('background', color).addClass('animated fadeInLeft').show();
         },
         'mouseleave': function() {
-            $(this).css('border-color', 'dodgerblue');
             $(this).find('div.product-overlay').hide();
             $(this).find('div.product-info').removeClass('product-info-moveup');
         }

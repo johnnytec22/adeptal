@@ -73,4 +73,6 @@ $(document).ready(function() {
             isToggled = true;   
         }
     });
+
+    $('#industries h4').prepend('<i class="fa fa-square fa-fw"></i>');
 });

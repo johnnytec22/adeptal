@@ -30,7 +30,7 @@ header .container #header-info p {
 
 header .overlay, #safety .overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(128, 0, 128, 0.8);
     top: 0;
     left: 0;
     right: 0;
@@ -54,10 +54,6 @@ header .overlay, #safety .overlay {
     header .container #header-info h1 {
         font-size: 23px;
     }
-    header .container #header-info p {
-        font-size: 14px;
-        line-height: 1.4;
-    }
 }
 
 /**sustainability at Adeptal**/
@@ -66,29 +62,12 @@ header .overlay, #safety .overlay {
 }
 
 section#sustain_at_adeptal p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
 }
-
-
-#slant_line {
-    transform: rotate(-15deg);
-    -webkit-transform: rotate(-15deg);
-    -moz-transform: rotate(-15deg);
-    -o-transform: rotate(-15deg);
-    -ms-transform: rotate(-15deg);
-    margin: 0px;
-    padding: 0px;
-    border-width: 2px;
-    border-color: #09C924;
-    position: absolute;
-    left: -1.7%;
-    right: -1.7%;
-    z-index: 10;
+#sustain_at_adeptal i{
+    color: #09c924;
 }
-
-
-
 /**supply Chain**/
 #supply_chain {
     padding: 200px 0;
@@ -96,13 +75,13 @@ section#sustain_at_adeptal p {
 }
 
 section#supply_chain p {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.6;
 }
 
 /**safety**/
 section#safety {
-    padding: 100px 0;
+    padding: 140px 0;
     background-image: url('../images/solution-img/adeptal environtment safety.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,12 +103,14 @@ section#safety .well h4 {
 }
 
 section#safety .well p {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.6;
     margin-top: 20px;
 }
 
-
+#sustain_at_adeptal h3, #safety h3, #supply_chain h3 , #safety .well h4{
+    font-family: Baloo;
+}
 
 @media(max-width: 768px) and (min-width: 390px) {
     section > .container > .row > div.col-lg-6 > p, .solution_paragraphs > p{
@@ -138,35 +119,22 @@ section#safety .well p {
         margin-right: auto
     }
 }
-
-
 @media(max-width: 770px) {
-    #sustain_at_adeptal {
+    #sustain_at_adeptal,#supply_chain,section#safety,section#sus_solution {
         padding: 80px 0;
     }
-    #supply_chain {
-        padding: 80px 0;
-    }
-    section#safety {
-        padding: 80px 0;
-    }
-    section#sus_solution {
-        padding: 80px 0;
-    }
-}
-
-@media(max-width: 770px) {
     section > .container > .row > .col-lg-12 >  i {
-        font-size: 40px !important;
+        font-size: 35px !important;
+    }
+    .solution_paragraphs, .solution_paragraphs > p {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
     }
 }
+
 @media(max-width: 500px) {
     section > .container > .row > .col-lg-12 > h3 {
         font-size: 22px;
-    }
-    .solution_paragraphs, .solution_paragraphs > p {
-        font-size: 15px !important;
-        line-height: 1.5 !important;
     }
     section#safety .well h4 {
         font-size: 19px;
@@ -178,8 +146,8 @@ section#safety .well p {
         font-size: 19px;
     }
     .solution_paragraphs, .solution_paragraphs > p {
-        font-size: 14px !important;
-        line-height: 1.4 !important;
+        font-size: 15px !important;
+        line-height: 1.2 !important;
     }
     section#safety .well h4 {
         font-size: 17px;

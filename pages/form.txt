@@ -1,48 +1,10 @@
-                            <form action="https://docs.google.com/forms/d/e/1FAIpQLSechrJ9PfMKN3GojSB92WU72eWBZj78mdB_eOQk1BwIHVW0Ug/formResponse" method="POST" target="#myModal">
-                                <div class="row">
+                            
+@font-face {
+    font-family: Sofia;
+    src: url('../fonts/Sofia-Regular.ttf');
+}
 
-                                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                                            <input class="form-control" type="text" name="entry.746844975" placeholder="Name" required>
-                                        </div>
-                                    </div>
-                    
-
-                                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-phone-square fa-fw"></i></span>
-                                            <input class="form-control" type="text" name="entry.525696139" placeholder="Phone" required>
-                                        </div>
-                                    </div>
-                                    
-
-                                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
-                                            <input class="form-control" type="email" name="entry.249713862" placeholder="Email" required>
-                                        </div>
-                                    </div>
-                                    
-
-                                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-                                        <div class="input-group">
-                                            <span class="input-group-addon">I'd like to: </span>
-                                            <select class="form-control text-center" type="text" name="entry.1601182338"  required>
-                                                <option value="" disabled>--select--</option>
-                                                <option value="get a service">get a service</option>
-                                                <option value="get an advice">get an advice</option>
-                                                <option value="get employed">get employed</option>
-                                                <option value="buy product">buy product</option>
-                                                <option value="connect">connect</option>
-                                                <option value="find address">find address</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-                                        <button type="submit" class="btn btn-primary" value="4857783518555545119"><i class="fa fa-send fa-fw"></i>Send</button>
-                                    </div>
-
-                                </div>
-                            </form>
+@font-face {
+    font-family: Comfortaa;
+    src: url('../fonts/Comfortaa-Light.ttf');
+}
