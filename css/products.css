@@ -102,10 +102,10 @@ header .overlay {
     color: #09c924;
 }
 #products .product-icons.red {
-    color: rgba(255,0,54, 0.6);
+    color: rgba(255,0,54, 0.8);
 }
 #products .product-icons.blue {
-    color: rgba(128,0,128, 0.4);
+    color: dodgerblue;
 }
 
 #products .jumbotron .product-info p {
