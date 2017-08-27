@@ -102,10 +102,10 @@ header .overlay {
     color: #09c924;
 }
 #products .product-icons.red {
-    color: #FD1A4A;
+    color: rgba(255,0,54, 0.6);
 }
 #products .product-icons.blue {
-    color: rgba(128,0,128, 0.8);
+    color: rgba(128,0,128, 0.4);
 }
 
 #products .jumbotron .product-info p {
@@ -114,9 +114,11 @@ header .overlay {
 }
 #products .jumbotron .product-overlay  p{
     font-size: 17px;
-    color: white;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    padding: 12% 2% 2% 2%
 }
-#products .jumbotron .product-overlay  p#first-paragraph {
+#products .jumbotron .product-overlay  p {
     padding-top: 13%;
 }
 
