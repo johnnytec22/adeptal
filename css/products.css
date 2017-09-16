@@ -8,7 +8,6 @@ header {
     height: 440px;
     position: relative;
 }
-
 header .container #header-info {
     color: white;
     z-index: 1;
@@ -22,7 +21,6 @@ header .container #header-info p {
     font-size: 18px;
     line-height: 1.5;
 }
-
 header .overlay {
     position: absolute;
     background: rgba(128,0,128, 0.7);
@@ -45,9 +43,6 @@ header .overlay {
         font-size: 16px;
     }
 }
-
-
-
 @media(max-width: 500px) {
     header {
         height: 280px;
@@ -82,8 +77,6 @@ header .overlay {
     padding-bottom: 150px;
     background: #FFEDFF;
 }
-
-
 #products .jumbotron {
     cursor: pointer;
     height: 240px;
@@ -94,7 +87,6 @@ header .overlay {
     border-radius: 3px !important;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2)
 }
-
 #products .product-icons {
     font-size: 30px;
 }
@@ -107,19 +99,14 @@ header .overlay {
 #products .product-icons.blue {
     color: dodgerblue;
 }
-
 #products .jumbotron .product-info p {
     color: rgba(0, 0, 0, 0.7);
     font-family: Baloo;
 }
 #products .jumbotron .product-overlay  p{
     font-size: 17px;
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: bold;
-    padding: 12% 2% 2% 2%
-}
-#products .jumbotron .product-overlay  p {
-    padding-top: 13%;
+    color: white;
+    padding: 13% 2% 2% 2%
 }
 
 #products .jumbotron .product-info{
@@ -132,7 +119,6 @@ header .overlay {
     -moz-transition: top 0.3s ease-in-out;
     -o-transition: top 0.3s ease-in-out;
 }
-
 #products .jumbotron .product-overlay {
     position: absolute;
     top: 35%;
@@ -149,7 +135,6 @@ header .overlay {
 .product-info-moveup {
     top: -8% !important;
 }
-
 @media(max-width: 768px) and (min-width: 390px){
     #products .jumbotron {
         width: 340px;
@@ -164,7 +149,6 @@ header .overlay {
         margin-right: auto;
     }
 }
-
 @media(max-width: 770px) {
     #products {
         padding-top: 50px;

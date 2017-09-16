@@ -49,6 +49,11 @@ $(document).ready(function() {
     });
 
 
+    $('#industries div:has(div.circle-bordered)').css({
+        'margin-bottom':'50px',
+        'marigin-bottom': '0px'
+    });
+
     function whyAdeptalColumnTextAlignment() {
         if($(window).width() < 992) {
             $('.adeptal-column .content p').addClass('text-center');
@@ -60,7 +65,7 @@ $(document).ready(function() {
     //this function runs when the document is read or loaded
     whyAdeptalColumnTextAlignment();
     //this runs when the screen is resized 
-    $(window).bind('resize',  whyAdeptalColumnTextAlignment);
+    $(window).on('resize',  whyAdeptalColumnTextAlignment);
 
     var isToggled = false;
 
@@ -74,5 +79,20 @@ $(document).ready(function() {
         }
     });
 
-    $('#industries h4').prepend('<i class="fa fa-square fa-fw"></i>');
+    function alignIndustryTextAndImage() {
+        if($(window).width() < 752 ) {
+            $('#industries h4').addClass('text-center');
+            $('#industries .circle-bordered').css('float', 'none').addClass('center-block');   
+        }else{
+            $('#industries h4').removeClass('text-center');
+            $('#industries .circle-bordered').removeClass('text-center').css('float', 'right');
+        }
+    }
+
+    //on load
+    alignIndustryTextAndImage();
+
+    //on widow resize 
+    $(window).on('resize', alignIndustryTextAndImage);
+    
 });

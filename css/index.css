@@ -284,49 +284,38 @@ i.page-icon {
 /**industries section**/
 #industries {
     position: relative;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 70px;
-    background-image: url('../images/index-img/adeptal industries we serve2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: #F5F5F5;
 }
 .circle-bordered {
-    display: inline-block;
     font-size: 18px !important;
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     background: white;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 5%;
-    margin-bottom: 15px;
+    border-radius: 50%;
     border: 5px solid white;
-    box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.3);
     position: relative;
 }
-#industries .overlay {
-    position: absolute;
-    background: rgba(128,0,128, 0.7);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
 #industries h2 {
-     color: white;
+     color: #CCC8C8;
  }
 #industries i {
-    color: #09C924;
+    color: #CCC8C8;
+}
+#industries i:not(.fa-bank) {
+    font-size: 14px;
 }
 #industries h4 {
-    font-family: Josefin;
+    font-family: Baloo;
     font-size: 19px;
-    color: white;
+    color:  #CCC8C8;
 }
 #industries .container #industries_toggle .btn-primary {
-    width: 110px;
+    width: 108px;
 }
 @media(max-width: 770px) {
     #industries {
@@ -346,17 +335,6 @@ i.page-icon {
     padding: 60px 0;
     background: white;
     color: black;
-    position: relative;
-}
-#why_adeptal img {
-    position: absolute;
-    top: 40%;
-    left: 5%;
-    height: 280px;
-    width: 230px;
-    padding: 30px;
-    border-radius: 3px;
-    box-shadow: 2px 3px 10px 2px rgba(9,201,36, 0.4)
 }
 #why_adeptal .content {
     padding-bottom: 30px;
@@ -370,7 +348,7 @@ i.page-icon {
     font-size: 20px;
 }
 #why_adeptal p {
-    font-size: 16px;
+    font-size: 18px;
 }
 @media(max-width: 770px) {
     #why_adeptal {
