@@ -288,17 +288,36 @@ i.page-icon {
     padding-bottom: 70px;
     background: #F5F5F5;
 }
+#industries .container {
+    background: white;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0, 0.15)
+}
+
+@media(max-width: 767px) {
+    #industries .container {
+        margin-right: 10% !important;
+        margin-left: 10% !important;
+    }
+}
+#industries .container > .row {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
 .circle-bordered {
-    font-size: 18px !important;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     background: white;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 50%;
-    border: 5px solid white;
-    position: relative;
+    border-radius: 0;
+    border: 6px solid white;
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0, 0.1)
+}
+#industries #more_row {
+    padding: 6px;
+    margin: 0 !important;
+    border-top: 1px solid #F5F5F5;
 }
 #industries h2 {
      color: #CCC8C8;
@@ -310,12 +329,13 @@ i.page-icon {
     font-size: 14px;
 }
 #industries h4 {
-    font-family: Baloo;
+    font-family: Josefin;
     font-size: 19px;
     color:  #CCC8C8;
+    font-weight: bold;
 }
-#industries .container #industries_toggle .btn-primary {
-    width: 108px;
+#industries .container .btn-primary {
+    width: 150px;
 }
 @media(max-width: 770px) {
     #industries {
@@ -366,14 +386,14 @@ i.page-icon {
 /**testimonies**/
 #testimony {
     padding: 150px 0 150px 0;
-    background: white;
+    background: #FCFCFC;
 }
  #testimony h2 {
      color: rgba(0,0,0, 0.8);
  }
 
 #testimony > div > i {
-    color: #09C924;
+    color: #CCC8C8;
 }
 #testimony i {
     color: dodgerblue;

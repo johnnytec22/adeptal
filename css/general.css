@@ -44,6 +44,7 @@ i.page-icon {
 .btn-primary {
     color: white;
     background: #09C924;
+    text-transform: uppercase;
     padding: 7px 20px !important;
     font-size: 17px;
     border-radius: 2px !important;
@@ -69,8 +70,9 @@ nav .navbar-brand h3 {
     margin: 0 !important;
     position: absolute;
     left: 50px;
-    font-family: Baloo;
-    font-size: 30px;
+    font-family: Josefin;
+    font-weight: bold;
+    font-size: 27px;
 }
 nav .navbar-brand {
     height: 100% !important;
@@ -78,14 +80,13 @@ nav .navbar-brand {
     margin-top: 18px;
     position: relative;
 }
-
 nav .navbar-brand img {
     position: absolute;
-    top: -10px;
+    top: -6px;
     float: left;
     width: 40px;
-    height: 40px;
-    border-radius: 5%;
+    height: 35px;
+    border-radius: 6%;
 }
 nav .navbar-brand a, footer p a{
     text-decoration: none !important;
@@ -99,7 +100,7 @@ nav .navbar-nav a{
     padding: 6px 15px !important;
     border: 1px solid transparent;
     font-size: 14px;
-    margin-left: 10px;
+    margin-left: 5px;
     font-family: Baloo;
     font-size: 16px;
 }
@@ -158,6 +159,12 @@ nav .navbar-nav a:not(#contact-btn):hover {
 @media(max-width: 400px){
     nav .navbar-brand a h3{
         font-size: 20px;
+    }
+    nav .navbar-brand img {
+        top: -7px;
+        width: 35px;
+        height: 30px;
+
     }
 }
 /**footer**/
